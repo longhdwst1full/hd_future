@@ -14,21 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 import Head from "next/head";
-import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import WorkflowSection from "@/components/WorkflowSection";
+import Testimonial from "@/components/Testimonial";
+import FooterSection from "@/components/FooterSection";
+import WhyChooseSection from "@/components/WhyChooseSection";
+import CardSlider from "@/components/CardSlider";
+import Header from "@/components/Header";
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const navItems = [
-    { name: "Home", href: "#home", active: true },
-    { name: "Services", href: "#services", hasDropdown: true },
-    { name: "About", href: "#about" },
-    { name: "Careers", href: "#careers" },
-    { name: "Pricing", href: "#pricing" },
-  ];
-
   return (
     <>
       <Head>
@@ -54,97 +48,9 @@ export default function Home() {
         <link rel="canonical" href="https://hdfuturetech.com" />
       </Head>
 
-      <div className="min-h-screen">
-        <header className="absolute top-0 left-0 right-0 z-50 bg-[#BFE2F8]">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div className="flex items-center justify-between">
-              {/* Logo Section */}
-              <div className="w-40 px-6 py-3">
-                <img
-                  src="./logo_header.png"
-                  className="w-full bg-cover"
-                  alt=""
-                />
-              </div>
-
-              {/* Desktop Navigation */}
-              <nav className="hidden lg:block">
-                <div className="bg-white/95 backdrop-blur-sm rounded-full px-8 py-3 shadow-lg">
-                  <div className="flex items-center space-x-8">
-                    {navItems.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={`flex items-center gap-1 px-4 py-2 text-sm lg:text-2xl text-[#093FB4] font-medium transition-colors duration-300 ${
-                          item.active
-                            ? "border-[#083DA5] border-b-2"
-                            : "hover:border-[#083DA5] hover:border-b-2"
-                        }`}
-                      >
-                        {item.name}
-                        {item.hasDropdown && (
-                          <ChevronDown className="w-4 h-4" />
-                        )}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </nav>
-
-              {/* Contact Button */}
-              <div className="hidden lg:block">
-                <button className="bg-white text-tech-blue-dark hover:bg-gray-50 text-[20px] transition-all duration-300 hover:scale-105 text-[#093FB4]  px-6 py-3 rounded-full font-bold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)]">
-                  Contact Us
-                </button>
-              </div>
-
-              {/* Mobile menu button */}
-              <div className="lg:hidden">
-                <button
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="text-white hover:text-gray-200 transition-colors duration-300 p-2"
-                >
-                  {isMenuOpen ? (
-                    <X className="w-6 h-6" />
-                  ) : (
-                    <Menu className="w-6 h-6" />
-                  )}
-                </button>
-              </div>
-            </div>
-
-            {/* Mobile Navigation */}
-            {isMenuOpen && (
-              <div className="lg:hidden mt-4">
-                <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                  <div className="space-y-4">
-                    {navItems.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={`flex items-center justify-between px-4 py-3 text-base font-medium transition-colors duration-300 rounded-lg ${
-                          item.active
-                            ? "text-tech-blue-dark bg-tech-blue/10"
-                            : "text-gray-600 hover:text-tech-blue-dark hover:bg-gray-50"
-                        }`}
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {item.name}
-                        {item.hasDropdown && (
-                          <ChevronDown className="w-4 h-4" />
-                        )}
-                      </a>
-                    ))}
-                    <div className="pt-4 border-t border-gray-200">
-                      <button className="w-full bg-tech-blue-dark text-white hover:bg-tech-blue px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-                        Contact Us
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
+      <div className="">
+        <section className="bg-[#BFE2F8]">
+          <Header />
 
           {/*  banner */}
 
@@ -202,7 +108,7 @@ export default function Home() {
               /> */}
             </div>
           </div>
-        </header>
+        </section>
       </div>
       {/* section */}
       <section className="w-full">
@@ -279,16 +185,16 @@ export default function Home() {
           </h2>
         </div>
       </section>
-      <div className="mt-10 container mx-auto">
-        {/* 2025 */}
-        <div className="text-center absolute left-0 right-0">
-          <img
-            src="./Group 106.png"
-            alt=""
-            className="object-cover w-[248px] m-auto"
-          />
-          
-          <div className="absolute top-[-18px] right-25      w-[500px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] ">
+      <div className="my-10 container mx-auto  ">
+        <div className="relative">
+          <div className="text-center mb-16">
+            <img
+              src="./Group 106.png"
+              alt=""
+              className="object-cover w-[248px] m-auto"
+            />
+          </div>
+          <div className="absolute top-[-22px] right-35 w-[500px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 ">
             {/* Year */}
             <span className="text-[#243761] font-bold text-2xl xl:text-[55px] mr-4">
               2025
@@ -299,8 +205,48 @@ export default function Home() {
               communication
             </p>
           </div>
+          <div className="absolute bottom-[36.5%] right-52 w-[500px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 ">
+            {/* Year */}
+            <span className="text-[#243761] font-bold text-2xl xl:text-[55px] mr-4">
+              2023
+            </span>
+            {/* Description */}
+            <p className="font-normal text-[22px] leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+              We follow industry-standard methodologies and employ effective
+              communication
+            </p>
+          </div>
+          <div className="absolute top-[30%] left-52 w-[500px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 ">
+            {/* Year */}
+            <span className="text-[#243761] font-bold text-2xl xl:text-[55px] mr-4">
+              2023
+            </span>
+            {/* Description */}
+            <p className="font-normal text-[22px] leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+              We follow industry-standard methodologies and employ effective
+              communication
+            </p>
+          </div>
+          <div className="absolute bottom-[1%] opacity-65 left-52 w-[500px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 ">
+            {/* Year */}
+            <span className="text-[#243761] font-bold text-2xl xl:text-[55px] mr-4">
+              2022
+            </span>
+            {/* Description */}
+            <p className="font-normal text-[22px] leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+              We follow industry-standard methodologies and employ effective
+              communication
+            </p>
+          </div>
         </div>
       </div>
+
+      <CardSlider />
+      <WhyChooseSection />
+      {/* Testimonial */}
+      <Testimonial />
+
+      <FooterSection />
     </>
   );
 }
