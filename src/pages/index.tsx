@@ -97,7 +97,7 @@ export default function Home() {
 
             <div className="flex flex-col items-center justify-center text-center px-4">
               {/* Title */}
-              <h1 className="text-[97px] leading-[150%] font-semibold text-white">
+              <h1 className="lg:text-[97px] md:text-[87px] sm:text-[67px] text-[47px] lg:leading-[150%] font-semibold text-white">
                 HD FUTURE. TECH
               </h1>
               {/* Subtitle */}
@@ -149,10 +149,10 @@ export default function Home() {
               /> */}
               </div>
             </div>
-            <div className="relative h-[800px] w-full">
+            <div className="relative md:h-[650px] xl:h-[800px] w-full">
               <div className="absolute top-0 left-[-400px] right-[-360px] bottom-0">
                 <img src="./Ellipse 12.png" alt="" className="w-full h-full" />
-                <div className="absolute top-[15%] left-[29%] right-[0%]">
+                <div className="absolute top-[15%]  left-[25%] right-[22%] xl:top-[15%] xl:left-[29%] xl:right-[0%]">
                   <img src="./connect-network.png" alt="" className="  " />
                 </div>
                 <img
@@ -217,8 +217,8 @@ export default function Home() {
         </div>
       </section>
       {/*  */}
-      <section className="bg-[linear-gradient(180deg,#BFE2F8_0%,#FFFFFF_100%)] bg-gradient-to-b from-[#BFE2F8] to-[#FFFFFF] rounded-[246px] overflow-hidden z-[9999]    py-20  ">
-        <div className="  w-[95%] m-auto relative bg-white  rounded-[125px]  mx-14 overflow-hidden">
+      <section className="bg-[linear-gradient(180deg,#BFE2F8_0%,#FFFFFF_100%)] bg-gradient-to-b from-[#BFE2F8] to-[#FFFFFF] lg:rounded-[246px] md:rounded-[146px] rounded-[100px] overflow-hidden z-[9999]    lg:py-20  md:py-14 py-8 ">
+        <div className="  w-[95%] m-auto relative bg-white  lg:rounded-[125px] md:rounded-[70px]  lg:mx-14 md:mx-8 mx-4 overflow-hidden">
           <div className="absolute inset-0 left-[35%] top-[-10%] bottom-[-15%]">
             <img
               src="./Mesa de trabajo 1 3.png"
@@ -227,15 +227,15 @@ export default function Home() {
             />
           </div>
 
-          <div className=" w-3/5 pl-32 ">
-            <div className="w-[450px] ml-[-60px]">
+          <div className=" w-3/5 lg:pl-32 md:pl-12 pl-8">
+            <div className="lg:w-[450px] md:w-[350px] w-[350px] lg:ml-[-60px]   ml-[-40px]">
               <img
                 src="./HD_logo_final.png"
                 alt="HD FutureTech Logo"
                 className="w-full object-cover"
               />
             </div>
-            <div className=" w-2/3 mt-[-50px] mb-10">
+            <div className=" w-2/3 lg:mt-[-50px] md:mt-[-30px] mt-[-30px] lg:mb-10 md:mb-5 mb-10">
               {/* Description */}
               <p className="text-[#151D50] font-medium text-[20px] xl:text-[28px] leading-[37px] mb-10">
                 Our experienced project management team ensures that your
@@ -254,64 +254,64 @@ export default function Home() {
         </div>
 
         <div className="text-center mt-30 mb-10">
-          <h2 className="font-semibold text-[97px] leading-[104%] tracking-[0] text-[#243761]">
+          <h2 className="font-semibold xl:text-[97px] md:text-[70px] text-[50px] leading-[104%] tracking-[0] text-[#243761]">
             Take a look at
           </h2>
 
-          <h2 className="mt-1 font-semibold text-[97px] leading-[104%] tracking-[0] text-[#093FB4]">
+          <h2 className="mt-1 font-semibold xl:text-[97px] md:text-[70px] text-[50px] leading-[104%] tracking-[0] text-[#093FB4]">
             Our Workflow About Us
           </h2>
         </div>
 
-        <div className="my-10 container mx-auto  ">
-          <div className="relative">
+        <div className="xl:my-10 md:w-full lg:container mx-auto md:my-8 md:mt-20">
+          <div className="relative w-full">
             <div className="text-center mb-16">
               <img
                 src="./Group 106.png"
                 alt=""
-                className="object-cover w-[200px] m-auto"
+                className="object-cover xl:w-[200px] md:w-[150px] w-[100px] m-auto"
               />
             </div>
-            <div className="absolute top-[-22px] right-35 w-[500px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 ">
+            <div className="absolute lg:top-[-22px] md:top-[-5.5%] top-[-20px] lg:right-35 md:right-20 right-10  xl:w-[500px] md:w-[350px] w-[300px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 ">
               {/* Year */}
-              <span className="text-[#243761] font-bold text-2xl xl:text-[55px] mr-4">
+              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-2xl xl:text-[55px] mr-4">
                 2025
               </span>
               {/* Description */}
-              <p className="font-normal text-[22px] leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+              <p className="font-normal lg:text-[22px]  md:text-sm text-xs  leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
                 We follow industry-standard methodologies and employ effective
                 communication
               </p>
             </div>
-            <div className="absolute bottom-[36.5%] right-52 w-[500px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 ">
+            <div className="absolute lg:bottom-[36.5%] md:bottom-[33.1%] lg:right-52 md:right-[13%] right-[9%] xl:w-[500px] md:w-[350px] w-[300px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 ">
               {/* Year */}
               <span className="text-[#243761] font-bold text-2xl xl:text-[55px] mr-4">
                 2023
               </span>
               {/* Description */}
-              <p className="font-normal text-[22px] leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+              <p className="font-normal lg:text-[22px]  md:text-sm text-xs  leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
                 We follow industry-standard methodologies and employ effective
                 communication
               </p>
             </div>
-            <div className="absolute top-[30%] left-52 w-[500px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 ">
+            <div className="absolute lg:top-[30%] md:top-[26.5%] top-[20%] lg:left-52 md:left-[12.5%] left-[8%]  xl:w-[500px] md:w-[350px] w-[300px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 ">
               {/* Year */}
-              <span className="text-[#243761] font-bold text-2xl xl:text-[55px] mr-4">
+              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-2xl xl:text-[55px] mr-4">
                 2024
               </span>
               {/* Description */}
-              <p className="font-normal text-[22px] leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+              <p className="font-normal lg:text-[22px]  md:text-sm text-xs  leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
                 We follow industry-standard methodologies and employ effective
                 communication
               </p>
             </div>
-            <div className="absolute bottom-[1%] opacity-65 left-52 w-[500px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 ">
+            <div className="absolute lg:bottom-[1%] md:bottom-[-3%] bottom-0 opacity-65 lg:left-52 md:left-[11%] left-[8%] xl:w-[500px] md:w-[350px] w-[300px] flex items-center gap-4 border border-[#2427BD] rounded-2xl px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 ">
               {/* Year */}
-              <span className="text-[#243761] font-bold text-2xl xl:text-[55px] mr-4">
+              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-2xl xl:text-[55px] mr-4">
                 2022
               </span>
               {/* Description */}
-              <p className="font-normal text-[22px] leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+              <p className="font-normal lg:text-[22px]  md:text-sm text-xs  leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
                 We follow industry-standard methodologies and employ effective
                 communication
               </p>
@@ -331,7 +331,7 @@ export default function Home() {
         <img
           src="./Ellipse 29.png"
           alt=""
-          className="absolute left-4 top-[-12%] w-200"
+          className="absolute lg:left-4 left-0 lg:top-[-12%] top-0 lg:w-200 md:w-100 w-80"
         />
         <WhyChooseSection />
       </div>
