@@ -67,8 +67,8 @@ export default function FooterSection() {
                 <textarea
                   rows={2}
                   placeholder="Your Message"
-                  className="w-full  resize-none bg-transparent outline-none border-0 
-             placeholder-blue-400 [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(1.5em-2px),#184BB8_calc(1.5em-2px),#184BB8_1.5em)] leading-[1.5em]"
+                  className="w-full resize-none bg-transparent outline-none border-0 
+             placeholder-blue-400 p-4 [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(3em-2px),#184BB8_calc(3em-2px),#184BB8_3em)] leading-[3em] "
                 ></textarea>
               </div>
               <button className="mt-4 block m-auto bg-[#122377] text-[#FFFFFF] px-12 py-3 rounded-[40px] font-semibold text-[29px] leading-[150%] tracking-[0%] hover:bg-[#1E3F8A] transition-colors duration-300">

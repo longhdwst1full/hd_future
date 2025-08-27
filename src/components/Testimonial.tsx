@@ -12,13 +12,13 @@ export default function Testimonial() {
       name: "Mark Thompson",
       title: "CEO of EventMasters",
       testimonial:
-        "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process. Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process.",
+        "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process. Our experienced  collaboration tools to keep you informed throughout the development process.",
     },
     {
       name: "Mark Thompson",
       title: "CEO of EventMasters",
       testimonial:
-        "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process.",
+        "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools  r specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process",
     },
     {
       name: "Mark Thompson",
@@ -43,11 +43,11 @@ export default function Testimonial() {
         Here&apos;s what podcasters are saying about Transistor
       </p>
       <div className="bg-[#C1E3F9] rounded-[191px] border-[1px] border-[#C1E3F9] overflow-hidden pt-12 px-24">
-        <div className="flex gap-6 mb-10 items-start w-full flex-wrap">
+        <div className="w-full columns-3 gap-6 mb-10">
           {testimonialData.map((data, index) => (
             <div
               key={index}
-              className="bg-white border border-blue-900 p-10 shadow-[0_8px_3.4px_-3px_rgba(103,187,255,0.51)] basis-[calc(33.333%-1rem)] rounded-[77px]"
+              className="bg-white border border-blue-900 p-10 shadow-[0_8px_3.4px_-3px_rgba(103,187,255,0.51)] rounded-[77px] break-inside-avoid mb-6"
             >
               <div className="flex items-center gap-4 mb-4 mt-6">
                 <div className="w-20 rounded-xs overflow-hidden">
