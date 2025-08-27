@@ -45,6 +45,16 @@ export default function Home() {
 
       <div className="relative">
         <img
+          src="./Ellipse 13.png"
+          alt=""
+          className="  absolute top-[35%] left-[0%]"
+        />
+        <img
+          src="./Ellipse 15.png"
+          alt=""
+          className="   absolute top-[28%] right-[0%]"
+        />
+        <img
           src="./Ellipse 21.png"
           alt=""
           className="  absolute top-[28%] left-[10%]"
@@ -67,7 +77,7 @@ export default function Home() {
         <img
           src="./Ellipse 14.png"
           alt=""
-          className="  absolute top-[20%] left-[16%]"
+          className="w-30  absolute top-[20%] left-[16%]"
         />
         <img
           src="./Group 63.png"
@@ -142,8 +152,8 @@ export default function Home() {
             <div className="relative h-[800px] w-full">
               <div className="absolute top-0 left-[-400px] right-[-360px] bottom-0">
                 <img src="./Ellipse 12.png" alt="" className="w-full h-full" />
-                <div className="absolute top-[20%] left-[20%]   bottom-0 right-[20%]">
-                  <img src="./Group 60.png" alt="" className=" w-full" />
+                <div className="absolute top-[15%] left-[29%] right-[0%]">
+                  <img src="./connect-network.png" alt="" className="  " />
                 </div>
                 <img
                   src="./Group 95.png"
@@ -159,6 +169,21 @@ export default function Home() {
                   src="./Group 95.png"
                   alt=""
                   className="absolute top-[50%] left-[50%]"
+                />
+                <img
+                  src="./Group 95.png"
+                  alt=""
+                  className="absolute top-[31%] right-[45%]"
+                />
+                <img
+                  src="./Group 95.png"
+                  alt=""
+                  className="absolute top-[65%] left-[42%]"
+                />
+                <img
+                  src="./Group 95.png"
+                  alt=""
+                  className="absolute top-[20%] right-[38%]"
                 />
               </div>
             </div>
@@ -192,7 +217,7 @@ export default function Home() {
         </div>
       </section>
       {/*  */}
-      <section className="bg-gradient-to-b from-[#BFE2F8] to-[#FFFFFF] rounded-[246px] overflow-hidden z-[9999] flex items-center justify-between  py-20 flex-col">
+      <section className="bg-[linear-gradient(180deg,#BFE2F8_0%,#FFFFFF_100%)] bg-gradient-to-b from-[#BFE2F8] to-[#FFFFFF] rounded-[246px] overflow-hidden z-[9999]    py-20  ">
         <div className="  w-[95%] m-auto relative bg-white  rounded-[125px]  mx-14 overflow-hidden">
           <div className="absolute inset-0 left-[35%] top-[-10%] bottom-[-15%]">
             <img
@@ -229,11 +254,10 @@ export default function Home() {
         </div>
 
         <div className="text-center mt-30 mb-10">
-          {/* Dòng 1 */}
           <h2 className="font-semibold text-[97px] leading-[104%] tracking-[0] text-[#243761]">
             Take a look at
           </h2>
-          {/* Dòng 2 */}
+
           <h2 className="mt-1 font-semibold text-[97px] leading-[104%] tracking-[0] text-[#093FB4]">
             Our Workflow About Us
           </h2>
@@ -294,10 +318,23 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <CardSlider />
+        <div className="  w-full rounded-b-[246px] pb-3">
+          <CardSlider />
+        </div>
       </section>
-
-      <WhyChooseSection />
+      <div className="relative pb-20">
+        <img
+          src="./Ellipse 28.png"
+          alt=""
+          className="absolute right-0 bottom-0 w-100"
+        />
+        <img
+          src="./Ellipse 29.png"
+          alt=""
+          className="absolute left-4 top-[-12%] w-200"
+        />
+        <WhyChooseSection />
+      </div>
       {/* Testimonial */}
       <Testimonial />
 

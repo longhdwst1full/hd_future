@@ -50,7 +50,7 @@ export default function CardSlider() {
   ];
 
   return (
-    <div className="w-full container mx-auto my-10 overflow-hidden">
+    <div className="w-[90%] mx-auto my-10 overflow-hidden">
       <Slider {...settings}>
         {cards.map((card, index) => (
           <div

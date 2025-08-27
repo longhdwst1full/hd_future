@@ -1,8 +1,7 @@
 // components/WhyChooseSection.js
 export default function WhyChooseSection() {
   return (
-    <div className="container mx-auto p-6 bg-gradient-to-b from-white to-blue-50 rounded-2xl ">
-      {/* Header */}
+    <div className="w-[90%] mx-auto p-6 rounded-2xl">
       <h2 className="font-semibold text-[43px] leading-[150%] tracking-[0em] text-center text-[#243761] mb-20">
         VÌ SAO HD FUTURE. TECH LÀ{" "}
         <span className="text-[#093FB4]">SỰ LỰA CHỌN HÀNG ĐẦU</span> <br /> ĐẦU

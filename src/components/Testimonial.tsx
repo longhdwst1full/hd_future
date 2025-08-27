@@ -74,7 +74,7 @@ export default function Testimonial() {
         </div>
       </div>
 
-      <div className="mb-10 pt-10 relative h-[420px] m-auto text-center">
+      <div className="pt-10 relative h-[420px] m-auto text-center">
         <div className="absolute top-0 left-0 right-0 bottom-0  w-full  overflow-hidden">
           <img
             src="./connect the world  2.png"
@@ -90,7 +90,37 @@ export default function Testimonial() {
         </button>
       </div>
 
-      <div className="bg-[#BFE2F8] rounded-b-[180px] pb-20">
+      <div className="bg-[#BFE2F8] rounded-b-[180px] pb-20 relative">
+        <img
+          src="./Ellipse 21.png"
+          alt=""
+          className="  absolute top-[20%] left-[20%]"
+        />
+        <img
+          src="./Ellipse 21.png"
+          alt=""
+          className="  absolute top-[38%] left-[10%]"
+        />
+        <img
+          src="./Ellipse 21.png"
+          alt=""
+          className="  absolute top-[10%] right-[10%]"
+        />
+        <img
+          src="./Ellipse 21.png"
+          alt=""
+          className="  absolute top-[35%] right-[20%]"
+        />
+        <img
+          src="./Ellipse 21.png"
+          alt=""
+          className="  absolute bottom-[40%] right-[15%]"
+        />
+        <img
+          src="./Ellipse 21.png"
+          alt=""
+          className="  absolute top-[50%] right-[35%]"
+        />
         <div className="bg-[linear-gradient(179.87deg,#2FA8CC_-19.91%,#032D89_73.02%)]  rounded-b-[145px] overflow-hidden">
           <div className="py-10 text-center mb-10 mt-10">
             <h3 className="font-semibold text-[54px] leading-[60px] tracking-[7%] text-white">
