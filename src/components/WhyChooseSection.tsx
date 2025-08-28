@@ -46,13 +46,13 @@ export default function WhyChooseSection() {
         <span className="text-[#093FB4]">SỰ LỰA CHỌN HÀNG ĐẦU</span> <br /> ĐẦU
         CHO DOANH NGHIỆP?
       </h2>
-      <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-14 md:gap-7 sm:gap-10 gap-3 lg:p-0 sm:px-16">
+      <div className="flex flex-wrap justify-center gap-3 xl:gap-14 md:gap-7 sm:gap-5 lg:p-0 sm:px-16">
         {services.map((service, idx) => (
           <div
             key={idx}
             className={`bg-white border border-[#204CDE] ${
               idx == 0 ? "shadow-[0px_4px_0px_4px_#1959CFD6]" : ""
-            }   rounded-[70px] overflow-hidden`}
+            } rounded-[70px] overflow-hidden lg:w-[30%] sm:w-[46%] w-[90%]`}
           >
             <div
               className={`rounded-b-[70px] overflow-hidden ${service.bg} flex justify-center items-center lg:h-[349px] md:h-[310px] h-[250px]`}
