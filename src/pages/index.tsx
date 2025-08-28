@@ -1,20 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 import CardSlider from "@/components/CardSlider";
 import FooterSection from "@/components/FooterSection";
 import Header from "@/components/Header";
 import Testimonial from "@/components/Testimonial";
 import WhyChooseSection from "@/components/WhyChooseSection";
+import WorkflowSection from "@/components/WorkflowSection";
 import Head from "next/head";
 
 export default function Home() {
@@ -93,7 +82,7 @@ export default function Home() {
           <div className="bg-[linear-gradient(179.87deg,#2FA8CC_-19.91%,#032D89_73.02%)]  rounded-b-[200px] overflow-hidden">
             <Header />
 
-            {/*  banner */} 
+            {/*  banner */}
             <div className="flex flex-col items-center justify-center text-center px-4 relative">
               {/* Title */}
               <h1 className="lg:text-[97px] md:text-[87px]  text-[40px] lg:leading-[150%] font-semibold text-white">
@@ -129,11 +118,11 @@ export default function Home() {
               </div>
               {/* Buttons */}
               <div className="flex gap-6 mt-5 md:text-[26px]  text-lg relative">
-                <button className="px-9 py-3 rounded-full bg-white text-blue-600 font-semibold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-105 active:scale-95 transition">
+                <button className="px-9 py-3 rounded-full bg-white text-blue-600 font-semibold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-105 active:scale-95 transition cursor-pointer">
                   Contact Us
                 </button>
                 {/* Chat With Us */}
-                <button className="px-8 py-3 rounded-full bg-[#203E80] text-white font-semibold shadow-[inset_0px_6px_7.2px_0px_rgba(108,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-110 active:scale-95 transition">
+                <button className="px-8 py-3 rounded-full bg-[#203E80] text-white font-semibold shadow-[inset_0px_6px_7.2px_0px_rgba(108,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-110 active:scale-95 transition cursor-pointer">
                   Chat With Us
                 </button>
               </div>
@@ -261,7 +250,7 @@ export default function Home() {
                 your specifications.
               </p>
               {/* Button */}
-              <button className="mt-8 md:px-16 sm:px-14 px-10 py-3 rounded-full bg-[#122377] text-white text-[18px] xl:text-[37px] font-medium hover:brightness-110 active:scale-95 transition lg:mb-28 md:mb-24 sm:mb-16 mb-10">
+              <button className="mt-8 md:px-16 sm:px-14 px-10 py-3 rounded-full bg-[#122377] text-white text-[18px] xl:text-[37px] font-medium hover:brightness-110 active:scale-95 transition lg:mb-28 md:mb-24 sm:mb-16 mb-10 cursor-pointer">
                 Explore
               </button>
             </div>
@@ -269,65 +258,16 @@ export default function Home() {
         </div>
 
         <div className="text-center mt-16 lg:mb-40 md:mb-30 mb-20">
-          <h2 className="font-semibold xl:text-[97px] md:text-[70px] text-[50px] leading-[104%] tracking-[0] text-[#243761]">
+          <h2 className="font-semibold xl:text-[97px] lg:text-[70px] md:text-[60px] text-[50px] leading-[104%] text-[#243761]">
             Take a look at
           </h2>
 
-          <h2 className="mt-1 font-semibold xl:text-[97px] md:text-[70px] text-[50px] leading-[104%] tracking-[0] text-[#093FB4]">
+          <h2 className="mt-1 font-semibold xl:text-[97px] lg:text-[70px] md:text-[60px] text-[50px] leading-[104%] text-[#093FB4]">
             Our Workflow About Us
           </h2>
         </div>
 
-        <div className="xl:my-10 md:w-full lg:container mx-auto md:my-8 md:mt-20">
-          <div className="relative w-full">
-            <div className="text-center sm:mb-16 mb-40">
-              <img
-                src="./Group 106.png"
-                alt=""
-                className="object-cover lg:w-[200px] md:w-[150px] w-[100px] m-auto"
-              />
-            </div>
-            <div className="absolute 2xl:right-[11%] xl:right-[4%] xl:top-[-3.5%] lg:top-[-4%] lg:right-[-1%] md:top-[-5.5%] md:right-[5%] sm:top-[-28px] top-[0%] sm:right-[8%] right-0 xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center md:gap-4 gap-2 border border-[#2427BD] md:rounded-[35px] rounded-2xl  md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 sm:flex-row flex-col">
-              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-xl xl:text-[55px] md:mr-3">
-                2025
-              </span>
-
-              <p className="font-normal lg:text-[22px] md:text-sm text-xs md:leading-[28px] leading-[22px] text-start text-[#243761] md:line-clamp-3 line-clamp-4">
-                We follow industry-standard methodologies and employ effective
-                communication
-              </p>
-            </div>
-            <div className="absolute 2xl:right-[15%] xl:right-[8%] lg:bottom-[35.5%] lg:right-[5%] md:bottom-[33.1%] sm:bottom-[33.1%] md:right-[13%] right-[12%] bottom-[15%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 sm:flex-row flex-col ">
-              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-xl xl:text-[55px] md:mr-3">
-                2023
-              </span>
-
-              <p className="font-normal lg:text-[22px]  md:text-sm text-xs md:leading-[28px] leading-[22px] text-start text-[#243761] md:line-clamp-3 line-clamp-4">
-                We follow industry-standard methodologies and employ effective
-                communication
-              </p>
-            </div>
-            <div className="absolute 2xl:left-[13%] lg:top-[29%] md:top-[26.5%] sm:top-[26%] top-[30%] xl:left-[7%] lg:left-[6%] md:left-[12.5%] sm:left-[13%]  left-[10%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 sm:flex-row flex-col ">
-              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-2xl xl:text-[55px] mr-4">
-                2024
-              </span>
-
-              <p className="font-normal lg:text-[22px]  md:text-sm text-xs md:leading-[28px] leading-[22px] text-start text-[#243761] md:line-clamp-3 line-clamp-4">
-                We follow industry-standard methodologies and employ effective
-              </p>
-            </div>
-            <div className="absolute 2xl:left-[12%] xl:left-[5%] xl:bottom-0 lg:bottom-[-1%] md:bottom-[-3%] sm:bottom-[-5%] bottom-[-25%] opacity-65 lg:left-[1%] md:left-[11%] sm:left-[8%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 sm:flex-row flex-col ">
-              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-2xl xl:text-[55px] mr-4">
-                2022
-              </span>
-
-              <p className="font-normal lg:text-[22px]  md:text-sm text-xs md:leading-[28px] leading-[22px] text-start text-[#243761] md:line-clamp-3 line-clamp-4">
-                We follow industry-standard methodologies and employ effective
-                communication
-              </p>
-            </div>
-          </div>
-        </div>
+        <WorkflowSection />
         <div className="w-full sm:rounded-b-[246px] rounded-b-[125px] pb-3">
           <CardSlider />
         </div>

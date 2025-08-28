@@ -84,7 +84,7 @@ export default function Testimonial() {
         </div>
 
         <button
-          className={` absolute left-1/2 -translate-x-1/2 block m-auto bg-[#2857BE] text-[#D8E4FF] sm:px-12 px-7 py-3 rounded-[40px] font-semibold sm:text-[29px] text-[20px] leading-[150%] tracking-[0%]  z-[9999999]`}
+          className={` absolute left-1/2 -translate-x-1/2 block m-auto bg-[#2857BE] text-[#D8E4FF] sm:px-12 px-7 py-3 rounded-[40px] font-semibold sm:text-[29px] text-[20px] leading-[150%] tracking-[0%]  z-[9999999] hover:bg-blue-700 transition-all duration-300 cursor-pointer`}
         >
           Read More
         </button>
@@ -134,7 +134,7 @@ export default function Testimonial() {
               vượt <br /> trội cho doanh nghiệp bạn.
             </p>
             <div className="lg:mb-10  mb-3">
-              <button className="bg-white text-[#093FB4] hover:bg-gray-50 lg:text-[29px] md:text-xl font-semibold transition-all duration-300 hover:scale-105 px-6 py-3 rounded-full shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)]">
+              <button className="bg-white text-[#093FB4] hover:bg-gray-50 lg:text-[29px] md:text-xl font-semibold transition-all duration-300 hover:scale-105 px-6 py-3 rounded-full shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] cursor-pointer">
                 Get Started
               </button>
             </div>

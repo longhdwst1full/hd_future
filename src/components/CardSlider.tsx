@@ -1,4 +1,4 @@
-// components/CardSlider.js
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,7 +10,7 @@ export default function CardSlider() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
   };
 
@@ -19,18 +19,19 @@ export default function CardSlider() {
       title: "Fun OTP",
       description:
         "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications.",
-      image: "/slide.png", // Thay bằng đường dẫn thực tế
+      image: "/slide.png",
+      styleTitle: "text-[40px] md:py-0 py-3",
       bgColor:
         "white border-[1px] border-[#B2B6FF] shadow-[0px_4px_5px_0px_#110C5240]",
       with: "w-full",
-      left: "xl:left-[25%] xl:top-0 lg:left-[30%] md:left-[32%] left-[12%] lg:top-[30%] md:top-[27%] bottom-0 sm:top-[30%] top-[60%]",
+      left: "xl:left-[25%] xl:top-0 lg:left-[30%] md:left-[32%] left-[12%] lg:top-[30%] md:top-[45%] bottom-0 sm:top-[35%] top-[60%]",
       styleDescription: "2xl:w-[55%] xl:w-[60%] lg:w-[80%] md:w-[80%]",
     },
     {
       title: "HD Future. Tech",
       description:
         "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications.",
-      image: "/slide_2.png", // Thay bằng đường dẫn thực tế
+      image: "/slide_2.png",
       bgColor: "bg-[#C2E3F8] border border-[#CFD1FF]",
       styleTitle: "text-blue-900 text-[40px] md:py-0 py-3",
       styleDescription:
@@ -42,7 +43,7 @@ export default function CardSlider() {
       title: "HD Codelad",
       description:
         "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications.",
-      image: "/slide_3.png", // Thay bằng đường dẫn thực tế
+      image: "/slide_3.png",
       bgColor: "bg-[#1F4392] border border-[#B2B6FF]",
       with: "w-full text-white",
       left: "left-[45%] top-[-13%] right-[4%] lg:left-[45%] lg:top-[20%] lg:right-[4%] md:left-[45%] md:top-[25%] md:right-[0%] xl:left-[52%] xl:top-[18%] xl:right-[4%] 2xl:top-[0%] 2xl:left-[52%] 2xl:right-[4%] sm:top-[45%] top-[55%]",
@@ -57,11 +58,16 @@ export default function CardSlider() {
     <div className="w-[90%] mx-auto sm:mb-10 lg:mt-10 mt-22 overflow-hidden">
       <Slider {...settings}>
         {cards.map((card, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             className={`relative w-full mx-auto p-6 rounded-[125px] ${card.bgColor} overflow-hidden  `}
           >
-            <div className={`absolute inset-0 ${card.left} `}>
+            <div
+              className={`absolute inset-0 opacity-90 pointer-events-none ${card.left} `}
+            >
               <img src={card.image} alt={card.title} className="w-full" />
             </div>
             <div
@@ -78,12 +84,12 @@ export default function CardSlider() {
                 {card.description}
               </p>
               <button
-                className={`block bg-[#122377] text-white lg:px-12 px-6 py-3 rounded-full font-medium lg:text-[37px] md:text-[31px] text-xl leading-[150%] tracking-[0em] ${card?.styleBtn}`}
+                className={`block bg-[#122377] text-white lg:px-12 px-6 py-3 rounded-full font-medium lg:text-[37px] md:text-[31px] text-xl leading-[150%] tracking-[0em] hover:scale-105 transform transition duration-300 ${card?.styleBtn} cursor-pointer`}
               >
                 Contact Us
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </Slider>
     </div>

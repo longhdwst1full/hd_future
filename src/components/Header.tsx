@@ -48,7 +48,7 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`flex items-center lg:mr-2 xl:px-10 lg:px-5 py-2 text-lg text-[#093FB4] font-medium transition-colors duration-300 ${
+                  className={`flex items-center lg:mr-2 xl:px-10 lg:px-5 py-2 text-2xl text-[#093FB4] font-medium transition-colors duration-300 ${
                     item.active
                       ? "border-[#083DA5] border-b-2"
                       : "hover:border-[#083DA5] hover:border-b-2"
@@ -64,7 +64,7 @@ export default function Header() {
 
         {/* Contact Button (Desktop) */}
         <div className="hidden lg:block">
-          <button className="bg-white hover:bg-gray-50 text-[#093FB4] text-lg transition-all duration-300 hover:scale-105 xl:px-5 px-4 py-2 xl:py-[18px] rounded-full font-bold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)]">
+          <button className="bg-white hover:bg-gray-50 text-[#093FB4] text-lg transition-all duration-300 hover:scale-105 xl:px-5 px-4 py-2 xl:py-[18px] rounded-full font-bold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] cursor-pointer">
             Contact Us
           </button>
         </div>
@@ -72,7 +72,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <div className="lg:hidden">
           <button onClick={() => setMobileOpen(true)}>
-            <Menu className="w-8 h-8 text-[#093FB4]" />
+            <Menu className="w-8 h-8 text-[#093FB4] cursor-pointer" />
           </button>
         </div>
       </div>
@@ -97,7 +97,7 @@ export default function Header() {
                         ? toggleSubMenu(item.name)
                         : setMobileOpen(false)
                     }
-                    className="w-full flex items-center justify-between text-left text-lg text-[#093FB4] font-medium hover:text-blue-600"
+                    className="w-full flex items-center justify-between text-left text-lg text-[#093FB4] font-medium hover:text-blue-600 cursor-pointer"
                   >
                     <span>{item.name}</span>
                     {item.hasDropdown &&
@@ -129,7 +129,7 @@ export default function Header() {
 
             {/* Contact button (Mobile) */}
             <div className="mt-auto pt-6">
-              <button className="w-full bg-[#093FB4] text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition-all duration-300">
+              <button className="w-full bg-[#093FB4] text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition-all duration-300 cursor-pointer">
                 Contact Us
               </button>
             </div>

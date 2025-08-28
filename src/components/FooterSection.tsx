@@ -5,7 +5,7 @@ export default function FooterSection() {
       {/* Contact Form Section */}
       <div className="mt-10 lg:pt-12 lg:pr-14 lg:pb-16 lg:pl-16  pt-10  pr-4  pb-9  pl-6 bg-[#BFE2F8] rounded-[87px]">
         <div className="bg-[#FFFFFF] xl:pt-32  xl:p-10 p-4 lg:pt-32 pt-20 mt-4 lg:rounded-[107px] md:rounded-[87px] rounded-[57px] shadow-[0px_4px_4px_0px_#1B339140] relative overflow-hidden">
-          <div className="absolute 2xl:bottom-[-20%] 2xl:left-[-3%] lg:bottom-[-20%] md:left-[-20%] md:bottom-[-30%] left-[-22%] bottom-[-28%]">
+          <div className="absolute 2xl:bottom-[-20%] 2xl:left-[-3%] xl:left-[-3%] lg:bottom-[-20%] lg:left-[-13%] md:left-[-13%] md:bottom-[-20%] sm:left-[-30%]  sm:bottom-[-28%] left-[-30%] bottom-[-10%]">
             <img
               src="/Mesa_de_trabajo.png"
               alt="Background"
@@ -67,11 +67,10 @@ export default function FooterSection() {
                 <textarea
                   rows={2}
                   placeholder="Your Message"
-                  className="w-full resize-none bg-transparent outline-none border-0 
-             placeholder-blue-400 p-4 [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(3em-2px),#184BB8_calc(3em-2px),#184BB8_3em)] leading-[3em] "
+                  className="w-full resize-none bg-transparent outline-none border-0 placeholder-blue-400 p-4 [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(3em-2px),#184BB8_calc(3em-2px),#184BB8_3em)] leading-[3em]"
                 ></textarea>
               </div>
-              <button className="mt-4 block m-auto bg-[#122377] text-[#FFFFFF] md:px-12 sm:px-10 px-6 py-3 rounded-[40px] font-semibold sm:text-[29px] text-2xl leading-[150%] tracking-[0%] hover:bg-[#1E3F8A] transition-colors duration-300">
+              <button className="mt-4 block m-auto bg-[#122377] text-[#FFFFFF] md:px-12 sm:px-10 px-6 py-3 rounded-[40px] font-semibold sm:text-[29px] text-2xl leading-[150%] tracking-[0%] hover:bg-[#1E3F8A] transition-colors duration-300 cursor-pointer">
                 Submit
               </button>
             </div>
