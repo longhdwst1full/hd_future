@@ -139,7 +139,7 @@ export default function FooterSection() {
             <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] inline-flex capitalize ml-[-16%]">
               Follow Our
             </p>
-            <p className="text-[#093FB4] font-semibold text-2xl sm:text-3xl md:text-[39px] capitalize inline-flex">
+            <p className="text-[#093FB4] font-semibold text-2xl sm:text-3xl md:text-[39px] capitalize">
               Linkedin{" "}
               <span className="inline-block ml-2 text-blue-500 border rounded-full w-7 h-7 p-1">
                 <img
@@ -152,7 +152,7 @@ export default function FooterSection() {
           </div>
 
           <div className="text-center sm:px-10 pb-9 pt-12">
-            <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] ml-[-14%] inline-flex capitalize">
+            <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] ml-[-18%] inline-flex capitalize">
               Hop Our
             </p>
             <p className="text-[#093FB4] font-semibold text-2xl sm:text-3xl md:text-[39px] capitalize">
@@ -168,7 +168,7 @@ export default function FooterSection() {
           </div>
 
           <div className="text-center sm:px-10 pt-20 pb-14 border-[3px] border-b-0 border-l-0 border-[#5389EE] rounded-tl-[62]">
-            <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] capitalize ml-[-18%] inline-flex">
+            <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] capitalize ml-[-25%] inline-flex">
               Join Our
             </p>
             <p className="text-[#093FB4] mt-2 font-semibold text-2xl sm:text-3xl md:text-[39px] capitalize">
@@ -184,7 +184,7 @@ export default function FooterSection() {
           </div>
 
           <div className="text-center sm:px-10 pt-20 pb-14 border-[3px] border-b-0 border-l-0 border-r-0  border-[#5389EE] rounded-tr-[62px]">
-            <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] capitalize ml-[-16%] inline-flex">
+            <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] capitalize ml-[-18%] inline-flex">
               Follow Us On
             </p>
             <p className="text-[#093FB4] mt-2 font-semibold text-2xl sm:text-3xl md:text-[39px] capitalize">

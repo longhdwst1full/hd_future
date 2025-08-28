@@ -52,7 +52,7 @@ export default function WhyChooseSection() {
             key={idx}
             className={`bg-white border border-[#204CDE] ${
               idx == 0 ? "shadow-[0px_4px_0px_4px_#1959CFD6]" : ""
-            } rounded-[70px] overflow-hidden lg:w-[30%] sm:w-[46%] w-[90%]`}
+            } rounded-[70px] overflow-hidden lg:w-[30%] sm:w-[46%] w-[90%] transform transition duration-500 hover:scale-105 hover:shadow-xl`}
           >
             <div
               className={`rounded-b-[70px] overflow-hidden ${service.bg} flex justify-center items-center lg:h-[349px] md:h-[310px] h-[250px]`}
