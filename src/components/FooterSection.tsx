@@ -3,17 +3,17 @@ export default function FooterSection() {
   return (
     <div className="relative">
       {/* Contact Form Section */}
-      <div className="mt-10 lg:p-14 px-8 py-10 bg-[#BFE2F8] rounded-[87px]">
-        <div className="bg-[#FFFFFF] lg:p-14 md:p-10  lg:pt-36 pt-20 mt-4 lg:rounded-[107px] md:rounded-[87px] rounded-[57px] shadow-[0px_4px_4px_0px_#1B339140] relative overflow-hidden">
-          <div className="absolute lg:bottom-[-17%] bottom-[-20%] lg:left-0 left-[-7%] lg:w-auto w-2/3">
+      <div className="mt-10 lg:pt-12 lg:pr-14 lg:pb-16 lg:pl-16  pt-10  pr-4  pb-9  pl-6 bg-[#BFE2F8] rounded-[87px]">
+        <div className="bg-[#FFFFFF] xl:pt-32  xl:p-10 p-4 lg:pt-32 pt-20 mt-4 lg:rounded-[107px] md:rounded-[87px] rounded-[57px] shadow-[0px_4px_4px_0px_#1B339140] relative overflow-hidden">
+          <div className="absolute 2xl:bottom-[-20%] 2xl:left-[-3%] lg:bottom-[-20%] md:left-[-20%] md:bottom-[-30%] left-[-22%] bottom-[-28%]">
             <img
               src="/Mesa_de_trabajo.png"
               alt="Background"
-              className="lg:w-full object-cover"
+              className="lg:w-full w-[87%]  object-cover"
             />
           </div>
           <div className="flex relative">
-            <div className="text-[#184BB8] w-full lg:w-[40%] md:w-[70%] lg:px-4 pr-2 h-auto lg:mt-0 mt-40">
+            <div className="text-[#184BB8] 2xl:w-[45%] xl:w-[50%]  lg:w-[55%] md:w-[55%] w-[50%] lg:px-4 pr-2 h-auto lg:mt-0 mt-40">
               <h3 className="font-semibold lg:text-[58px] md:text-[40px] text-3xl lg:leading-[58px] md:leading-[48px] tracking-[0.07em] ">
                 GỬI YÊU CẦU TƯ VẤN GIẢI PHÁP
               </h3>
@@ -22,9 +22,9 @@ export default function FooterSection() {
                 giá theo thông tin mà bạn để lại.
               </p>
             </div>
-            <div className="w-full lg:w-2/3 md:w-auto lg:my-0 my-10 mt-14">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className=" lg:p-10 p-5 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
+            <div className="flex-1 2xl:w-2/3 lg:my-0 my-10 mt-14 xl:mt-0 xl:mb-0 lg:mb-18 mb-24">
+              <div className="grid grid-cols-2 md:gap-4 gap-2">
+                <div className=" lg:p-10 md:p-5 p-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
                   <p className="text-[22px] font-semibold p-2 mb-2">
                     Full Name
                   </p>
@@ -34,7 +34,7 @@ export default function FooterSection() {
                     className="p-2 focus:outline-none focus:border-b-2 border-[#184BB8]  w-full border-0 border-b b  focus:border-blue-500 focus:ring-0 text-blue-600 placeholder-blue-400"
                   />
                 </div>
-                <div className="lg:p-10 p-5 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
+                <div className="lg:p-10 md:p-5 p-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
                   <p className="text-[22px] font-semibold p-2 mb-2">Email</p>
                   <input
                     type="text"
@@ -43,7 +43,7 @@ export default function FooterSection() {
                   />
                 </div>
               </div>
-              <div className="lg:p-10 p-5 mt-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
+              <div className="lg:p-10 md:p-5 p-3 mt-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
                 <p className="text-[22px] font-medium p-2 mb-2">
                   Why are you contacting us?
                 </p>
@@ -79,7 +79,7 @@ export default function FooterSection() {
         </div>
       </div>
 
-      <div className="border-[3px] border-[#093FB4] rounded-t-[152px] mt-60 p-20 relative outline-none">
+      <div className="border-[3px] border-[#093FB4] rounded-t-[152px] lg:mt-60 mt-50 lg:p-20 p-12 relative outline-none">
         <div className="absolute top-[-12%] left-1/2 -translate-x-1/2 bg-white w-[318px] h-[318px] overflow-hidden rounded-full">
           <img
             src="/HD_logo_final.png"
@@ -87,7 +87,7 @@ export default function FooterSection() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="text-center mb-6 mt-3 relative">
+        <div className="text-center lg:mb-6 lg:mt-6 md:mt-12 mt-20 relative">
           <p className="font-medium text-[#184BB8] text-[22px] leading-[21px] tracking-[0.07em] text-center max-w-3xl mx-auto">
             Cung cấp dịch vụ proxy chất lượng cao với sự ổn định và bảo mật
             tuyệt đối cho người dùng Việt Nam.
@@ -95,48 +95,51 @@ export default function FooterSection() {
         </div>
 
         {/* Services Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 md:mt-20 pt-10 lg:w-2/3 w-full mx-auto lg:pl-60">
+        <div className="max-w-5xl m-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-18 mx-auto ">
           <div>
-            <h3 className="font-bold  md:text-[22px] text-lg leading-[22px] tracking-[0.07em] text-[#093FB4]">
+            <h3 className="font-bold text-lg md:text-[22px] leading-[22px] tracking-[0.07em] text-[#093FB4]">
               DỊCH VỤ
             </h3>
-            <ul className="text-[#151D50] font-medium text-base md:text-[19px] leading-[30px] mt-2 space-y-1">
-              <li>Lập trình phần mềm</li>
-              <li>AI & Khoa học dữ liệu</li>
-              <li>Thiết kế sản phẩm</li>
-              <li>DevOps & Cloud</li>
-            </ul>
+            <div className="text-[#151D50] font-medium text-base md:text-[19px] leading-[30px] mt-2 space-y-1">
+              <p>Lập trình phần mềm</p>
+              <p>AI & Khoa học dữ liệu</p>
+              <p>Thiết kế sản phẩm</p>
+              <p>DevOps & Cloud</p>
+            </div>
           </div>
+
           <div>
             <h3 className="font-bold text-lg md:text-[22px] leading-[22px] tracking-[0.07em] text-[#093FB4]">
               SẢN PHẨM
             </h3>
-            <ul className="text-[#151D50] font-medium text-base md:text-[19px] leading-[30px] mt-2 space-y-1">
-              <li>Tài chính</li>
-              <li>Bán lẻ & TMDT</li>
-              <li>Công nghệ</li>
-            </ul>
+            <div className="text-[#151D50] font-medium text-base md:text-[19px] leading-[30px] mt-2 space-y-1">
+              <p>Tài chính</p>
+              <p>Y tế</p>
+              <p>Bán lẻ & TMDT</p>
+              <p>Công nghệ</p>
+            </div>
           </div>
+
           <div>
             <h3 className="font-bold text-lg md:text-[22px] leading-[22px] tracking-[0.07em] text-[#093FB4]">
               CÔNG TY
             </h3>
-            <ul className="text-[#151D50] font-medium text-base md:text-[19px] leading-[30px] mt-2 space-y-1">
-              <li>Về chúng tôi</li>
-              <li>Tin tức</li>
-              <li>Chính sách</li>
-              <li>Liên hệ</li>
-            </ul>
+            <div className="text-[#151D50] font-medium text-base md:text-[19px] leading-[30px] mt-2 space-y-1">
+              <p>Về chúng tôi</p>
+              <p>Tin tức</p>
+              <p>Chính sách</p>
+              <p>Liên hệ</p>
+            </div>
           </div>
         </div>
 
         {/* Social Media Section */}
-        <div className="lg:w-2/3 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 mb-8 mt-40 border-[3px] border-[#5389EE] rounded-[62px] overflow-hidden">
-          <div className="text-center p-5 border-r-[3px] border-[#5389EE] py-10">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 mb-8 lg:mt-30 mt-34 border-[3px] border-[#5389EE] rounded-[62px] overflow-hidden">
+          <div className="text-center px-10 border-r-[3px] border-[#5389EE] pb-9 pt-12">
             <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] inline-flex capitalize ml-[-16%]">
               Follow Our
             </p>
-            <p className="text-[#093FB4] font-semibold text-2xl sm:text-3xl md:text-[39px] capitalize">
+            <p className="text-[#093FB4] font-semibold text-2xl sm:text-3xl md:text-[39px] capitalize inline-flex">
               Linkedin{" "}
               <span className="inline-block ml-2 text-blue-500 border rounded-full w-7 h-7 p-1">
                 <img
@@ -148,7 +151,7 @@ export default function FooterSection() {
             </p>
           </div>
 
-          <div className="text-center px-5 py-10 ">
+          <div className="text-center px-10 pb-9 pt-12">
             <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] ml-[-14%] inline-flex capitalize">
               Hop Our
             </p>
@@ -164,7 +167,7 @@ export default function FooterSection() {
             </p>
           </div>
 
-          <div className="text-center px-5 py-20 border-[3px] border-b-0 border-l-0 border-[#5389EE] rounded-tl-[62]">
+          <div className="text-center px-10 pt-20 pb-14 border-[3px] border-b-0 border-l-0 border-[#5389EE] rounded-tl-[62]">
             <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] capitalize ml-[-18%] inline-flex">
               Join Our
             </p>
@@ -180,7 +183,7 @@ export default function FooterSection() {
             </p>
           </div>
 
-          <div className="text-center px-5 py-20 border-[3px] border-b-0 border-l-0 border-r-0  border-[#5389EE] rounded-tr-[62px]">
+          <div className="text-center px-10 pt-20 pb-14 border-[3px] border-b-0 border-l-0 border-r-0  border-[#5389EE] rounded-tr-[62px]">
             <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] capitalize ml-[-16%] inline-flex">
               Follow Us On
             </p>
@@ -197,7 +200,7 @@ export default function FooterSection() {
           </div>
         </div>
         {/* Footer */}
-        <p className="lg:w-[85%] max-w-5xl m-auto text-center text-[#093FB4] font-medium text-sm sm:text-base md:text-[18px] leading-[28px] pb-10 capitalize mt-50 border-b-2 border-[#093FB4]">
+        <p className="lg:w-[90%] w-full m-auto text-center text-[#093FB4] font-medium text-sm sm:text-base md:text-[18px] lg:pb-10 pb-5 capitalize lg:mt-36 mt-44 border-b-2 border-[#093FB4]">
           Copyright © 2025 HD FutureTech.Com | All Rights Reserved
         </p>
       </div>

@@ -10,7 +10,7 @@ export default function CardSlider() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
   };
 
@@ -22,8 +22,9 @@ export default function CardSlider() {
       image: "/slide.png", // Thay bằng đường dẫn thực tế
       bgColor:
         "white border-[1px] border-[#B2B6FF] shadow-[0px_4px_5px_0px_#110C5240]",
-      with: "lg:w-1/2 md:w-[65%] w-1/2",
-      left: "lg:left-[30%] md:left-[32%] left-[12%] lg:top-0 md:top-[27%] bottom-0",
+      with: "w-full",
+      left: "xl:left-[25%] xl:top-0 lg:left-[30%] md:left-[32%] left-[12%] lg:top-[30%] md:top-[27%] bottom-0",
+      styleDescription: "2xl:w-[55%] xl:w-[60%] lg:w-[80%] md:w-[80%]",
     },
     {
       title: "HD Future. Tech",
@@ -32,9 +33,9 @@ export default function CardSlider() {
       image: "/slide_2.png", // Thay bằng đường dẫn thực tế
       bgColor: "bg-[#C2E3F8] border border-[#CFD1FF]",
       titleStyle: "text-blue-900",
-      styleDescription: "lg:w-auto md:w-[80%]",
-      with: "lg:w-[56%] md:w-[82%] w-[56%]",
-      left: "lg:left-[45%] lg:top-[-13%] lg:right-[4%] md:left-[41.5%] md:top-[22%] md:right-[0%] left-[45%] top-[-13%] right-[4%]",
+      styleDescription: "2xl:w-[55%] xl:w-[60%] lg:w-[80%] md:w-[80%] w-full",
+      with: "w-full",
+      left: "2xl:top-[0%] xl:left-[52%] xl:top-[20%] xl:right-[4%] lg:left-[50%] lg:top-[25%] lg:right-[3%] md:left-[50%] md:top-[40%] md:right-[5%] left-[45%] top-[-13%] right-[4%]",
     },
     {
       title: "HD Codelad",
@@ -42,16 +43,16 @@ export default function CardSlider() {
         "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications.",
       image: "/slide_3.png", // Thay bằng đường dẫn thực tế
       bgColor: "bg-[#1F4392] border border-[#B2B6FF]",
-      with: "lg:w-[56%] md:w-[82%] w-[56%] text-white",
-      left: "left-[45%] top-[-13%] right-[4%] ld:left-[45%] ld:top-[-13%] ld:right-[4%] md:left-[45%] md:top-[25%] md:right-[0%]",
-      styleDescription: "text-white",
+      with: "w-full text-white",
+      left: "left-[45%] top-[-13%] right-[4%] lg:left-[45%] lg:top-[20%] lg:right-[4%] md:left-[45%] md:top-[25%] md:right-[0%] xl:left-[52%] xl:top-[18%] xl:right-[4%] 2xl:top-[0%] 2xl:left-[52%] 2xl:right-[4%]",
+      styleDescription: "text-white 2xl:w-[50%] xl:w-[63%] md:w-[70%] lg:w-[80%]",
       styleBtn: "bg-white !text-[#122377]",
       styleTitle: "text-white",
     },
   ];
 
   return (
-    <div className="w-[90%] mx-auto my-10 overflow-hidden">
+    <div className="w-[90%] mx-auto mb-10 lg:mt-10 mt-22 overflow-hidden">
       <Slider {...settings}>
         {cards.map((card, index) => (
           <div
@@ -62,10 +63,10 @@ export default function CardSlider() {
               <img src={card.image} alt={card.title} className="w-full" />
             </div>
             <div
-              className={`relative z-10 text-start pl-10 py-10  ${card?.with}`}
+              className={`relative z-10 text-start pl-5 lg:pl-10 py-10  ${card?.with}`}
             >
               <h3
-                className={`font-semibold xl:text-[97px] md:text-[84px] text-[64px] lg-text-[87px] tracking-[-0.006em] text-[#093FB4]  ${card?.styleTitle} `}
+                className={`font-semibold xl:text-[97px] md:text-[84px] text-[64px] lg-text-[87px] tracking-[-0.006em] text-[#093FB4] ${card?.styleTitle} mt-7 `}
               >
                 {card.title}
               </h3>
@@ -75,7 +76,7 @@ export default function CardSlider() {
                 {card.description}
               </p>
               <button
-                className={`block bg-[#122377] text-white px-12 py-3 rounded-full font-medium lg:text-[37px] md:text-[31px] text-xl leading-[150%] tracking-[0em] ${card?.styleBtn}`}
+                className={`block bg-[#122377] text-white lg:px-12 px-6 py-3 rounded-full font-medium lg:text-[37px] md:text-[31px] text-xl leading-[150%] tracking-[0em] ${card?.styleBtn}`}
               >
                 Contact Us
               </button>

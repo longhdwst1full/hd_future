@@ -43,12 +43,12 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:block">
           <div className="bg-white/95 backdrop-blur-sm rounded-full xl:px-10 px-5 xl:py-3 py-2 shadow-lg">
-            <div className="flex items-center xl:space-x-10  space-x-5">
+            <div className="flex items-center space-x-5  ">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`flex items-center gap-2 px-4 py-2 text-lg text-[#093FB4] font-medium transition-colors duration-300 ${
+                  className={`flex items-center lg:mr-2 px-10 py-2 text-lg text-[#093FB4] font-medium transition-colors duration-300 ${
                     item.active
                       ? "border-[#083DA5] border-b-2"
                       : "hover:border-[#083DA5] hover:border-b-2"
@@ -64,7 +64,7 @@ export default function Header() {
 
         {/* Contact Button (Desktop) */}
         <div className="hidden lg:block">
-          <button className="bg-white hover:bg-gray-50 text-[#093FB4] text-lg transition-all duration-300 hover:scale-105 xl:px-9 px-4 py-2 xl:py-4 rounded-full font-bold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)]">
+          <button className="bg-white hover:bg-gray-50 text-[#093FB4] text-lg transition-all duration-300 hover:scale-105 xl:px-5 px-4 py-2 xl:py-[18px] rounded-full font-bold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)]">
             Contact Us
           </button>
         </div>

@@ -47,7 +47,7 @@ export default function Testimonial() {
           {testimonialData.map((data, index) => (
             <div
               key={index}
-              className="bg-white border border-blue-900 lg:p-10 md:p-4 p-2 shadow-[0_8px_3.4px_-3px_rgba(103,187,255,0.51)] lg:rounded-[77px] rounded-[70px] break-inside-avoid mb-6"
+              className="bg-white border border-blue-900 lg:p-9 md:p-4 p-2 shadow-[0_8px_3.4px_-3px_rgba(103,187,255,0.51)] lg:rounded-[77px] rounded-[70px] break-inside-avoid mb-6"
             >
               <div className="flex items-center lg:gap-4 gap-2 mb-4 mt-6">
                 <div className="w-20 rounded-xs overflow-hidden">
@@ -61,7 +61,7 @@ export default function Testimonial() {
                   <p className="text-[#151D50] font-normal text-[21px]   ">
                     {data.name}
                   </p>
-                  <p className="font-normal text-[12px]    text-[#5162CD]">
+                  <p className="font-normal text-[12px] text-[#5162CD]">
                     {data.title}
                   </p>
                 </div>
@@ -90,7 +90,7 @@ export default function Testimonial() {
         </button>
       </div>
 
-      <div className="bg-[#BFE2F8] rounded-b-[180px] lg:pb-20 md:pb-16 pb-10 overflow-hidden relative">
+      <div className="bg-[#BFE2F8] rounded-b-[180px] lg:pb-12 pb-6 overflow-hidden relative">
         <img
           src="./Ellipse 21.png"
           alt=""
@@ -122,7 +122,7 @@ export default function Testimonial() {
           className="  absolute top-[50%] right-[35%]"
         />
         <div className="bg-[linear-gradient(179.87deg,#2FA8CC_-19.91%,#032D89_73.02%)]  rounded-b-[145px] overflow-hidden">
-          <div className="py-10  text-center mb-10 mt-10">
+          <div className="lg:py-10 py-6  text-center mb-10 lg:mt-10 mt-5">
             <h3 className="font-semibold lg:text-[54px] md:text-[37px] text-[30px]  leading-[60px] tracking-[7%] text-white">
               SẴN SÀNG <span className="text-[#50FFE2]">CHUYỂN ĐỔI</span>
               <br />

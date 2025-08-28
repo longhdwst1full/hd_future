@@ -40,13 +40,13 @@ const services = [
 
 export default function WhyChooseSection() {
   return (
-    <div className="lg:w-[90%] w-full mx-auto lg:p-6 p-4 rounded-2xl relative">
-      <h2 className="font-semibold lg:text-[43px] md:text-[33px] leading-[150%] tracking-[0em] text-center text-[#243761] mb-20">
+    <div className="lg:w-[90%] w-full mx-auto lg:p-6 p-4 rounded-2xl relative lg:mt-8">
+      <h2 className="font-semibold lg:text-[43px] md:text-[33px] leading-[150%] tracking-[0em] text-center text-[#243761] lg:mb-28 mb-20">
         VÌ SAO HD FUTURE. TECH LÀ{" "}
         <span className="text-[#093FB4]">SỰ LỰA CHỌN HÀNG ĐẦU</span> <br /> ĐẦU
         CHO DOANH NGHIỆP?
       </h2>
-      <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-10 lg:p-0 px-16">
+      <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-14 md:gap-7 gap-10 lg:p-0 px-16">
         {services.map((service, idx) => (
           <div
             key={idx}
@@ -64,7 +64,7 @@ export default function WhyChooseSection() {
                 loading="lazy"
               />
             </div>
-            <div className="text-start p-4 px-8 mb-4">
+            <div className="text-start lg:pt-6 p-4 px-8 mb-4">
               <h3 className="font-semibold lg:text-[30px] md:text-[24px] text-base leading-[150%] text-[#093FB4] py-2">
                 {service.title}
               </h3>
