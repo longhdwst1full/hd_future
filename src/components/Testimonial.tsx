@@ -42,8 +42,8 @@ export default function Testimonial() {
       <p className="font-normal text-center text-[28px] leading-[37px] tracking-[-0.006em] text-[#093FB4] mb-8">
         Here&apos;s what podcasters are saying about Transistor
       </p>
-      <div className="bg-[#C1E3F9] lg:rounded-[191px] rounded-[88px] border-[1px] border-[#C1E3F9] overflow-hidden pt-12 lg:px-24 px-9 lg:mx-0 mx-5">
-        <div className="w-full columns-3 gap-6 mb-10">
+      <div className="bg-[#C1E3F9] lg:rounded-[191px] rounded-[88px] border-[1px] border-[#C1E3F9] overflow-hidden pt-12 lg:px-24 sm:px-9 px-2 lg:mx-0 sm:mx-5">
+        <div className="w-full sm:columns-3 columns-2 sm:gap-6 gap-2 mb-10">
           {testimonialData.map((data, index) => (
             <div
               key={index}
@@ -66,7 +66,7 @@ export default function Testimonial() {
                   </p>
                 </div>
               </div>
-              <p className="text-[#093FB4] lg:mt-8 md:mt-6 mb-8 lg:mb-10 font-normal lg:text-[24px] md:text-xl text-lg lg:leading-[38px] lg:tracking-[-0.6%] text-[22px] leading-[29px] tracking-[-0.006em]">
+              <p className="text-[#093FB4] lg:mt-8 md:mt-6 mb-8 lg:mb-10 font-normal lg:text-[24px] md:text-xl text-lg lg:leading-[38px] lg:tracking-[-0.6%] text-[22px] leading-[29px] tracking-[-0.006em] sm:line-clamp-none line-clamp-[12]">
                 {data.testimonial}
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function Testimonial() {
         </div>
       </div>
 
-      <div className="pt-10 relative lg:h-[420px] h-[350px] m-auto text-center">
+      <div className="pt-10 relative lg:h-[420px] sm:h-[350px] h-[180px] m-auto text-center">
         <div className="absolute top-0 left-0 right-0 bottom-0  w-full  overflow-hidden">
           <img
             src="./connect the world  2.png"
@@ -84,7 +84,7 @@ export default function Testimonial() {
         </div>
 
         <button
-          className={` absolute left-1/2 -translate-x-1/2  block m-auto bg-[#2857BE] text-[#D8E4FF] px-12 py-3 rounded-[40px] font-semibold text-[29px] leading-[150%] tracking-[0%]  z-[9999999]`}
+          className={` absolute left-1/2 -translate-x-1/2 block m-auto bg-[#2857BE] text-[#D8E4FF] sm:px-12 px-7 py-3 rounded-[40px] font-semibold sm:text-[29px] text-[20px] leading-[150%] tracking-[0%]  z-[9999999]`}
         >
           Read More
         </button>
@@ -128,7 +128,7 @@ export default function Testimonial() {
               <br />
               DOANH NGHIỆP CỦA BẠN ?
             </h3>
-            <p className="text-[#F6F8FF] font-medium lg:text-[22px] md:text-[16px] text-[14px] mt-7 mb-14">
+            <p className="text-[#F6F8FF] font-medium lg:text-[22px] md:text-[16px] text-[14px] mt-7 mb-14 md:w-full sm:w-[90%] w-[80%] mx-auto">
               Hợp tác cùng&nbsp;<span className="font-bold">HD CodeLab</span>
               &nbsp;để tăng tốc hành trình chuyển đổi số. Cùng kiến tạo giá trị
               vượt <br /> trội cho doanh nghiệp bạn.
@@ -140,10 +140,10 @@ export default function Testimonial() {
             </div>
           </div>
 
-          <div className="relative lg:h-[400px] h-[300px] w-full">
+          <div className="relative xl:h-[450px] lg:h-[400px] h-[300px] w-full">
             <div className="absolute top-0 left-[-200px] right-[-180px] bottom-0">
               <img src="./Ellipse 12.png" alt="" className="w-full h-full" />
-              <div className="absolute top-[20%] left-[20%]   bottom-0 right-[15%]">
+              <div className="absolute top-[20%] left-[20%] bottom-0 right-[15%]">
                 <img src="./Group 60.png" alt="" className="h-full " />
               </div>
             </div>

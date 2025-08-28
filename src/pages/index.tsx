@@ -93,8 +93,7 @@ export default function Home() {
           <div className="bg-[linear-gradient(179.87deg,#2FA8CC_-19.91%,#032D89_73.02%)]  rounded-b-[200px] overflow-hidden">
             <Header />
 
-            {/*  banner */}
-
+            {/*  banner */} 
             <div className="flex flex-col items-center justify-center text-center px-4 relative">
               {/* Title */}
               <h1 className="lg:text-[97px] md:text-[87px]  text-[40px] lg:leading-[150%] font-semibold text-white">
@@ -139,7 +138,6 @@ export default function Home() {
                 </button>
               </div>
 
-              {/* vong trong header */}
               <div className="relative w-full lg:h-32 h-20">
                 {/* <img
                 src="./banner-router.png"
@@ -237,17 +235,17 @@ export default function Home() {
         </div>
       </section>
       {/*  */}
-      <section className="bg-[linear-gradient(180deg,#BFE2F8_0%,#FFFFFF_100%)] bg-gradient-to-b from-[#BFE2F8] to-[#FFFFFF] lg:rounded-[246px] md:rounded-[146px] rounded-[100px] overflow-hidden z-[9999] lg:py-20 !lg:pt-18 xl:px-10 lg:px-8  md:py-14 py-8  pt-10">
+      <section className="bg-[linear-gradient(180deg,#BFE2F8_0%,#FFFFFF_100%)] bg-gradient-to-b from-[#BFE2F8] to-[#FFFFFF] lg:rounded-[246px] md:rounded-[146px] rounded-[100px] overflow-hidden z-[9999] lg:py-20 !lg:pt-18 xl:px-10 lg:px-8  md:py-14 sm:py-8 pt-10">
         <div className="w-[95%] m-auto relative bg-white  lg:rounded-[125px] rounded-[70px] md:mx-8 mx-4 overflow-hidden">
-          <div className="absolute inset-0 md:left-[35%] left-[33%] top-[-10%] md:bottom-[-15%] bottom-[-30%] md:w-auto w-[80%]">
+          <div className="absolute inset-0 md:left-[35%] sm:left-[33%] left-[45%] sm:top-[-10%] md:bottom-[-15%] sm:bottom-[-30%] top-[53%] md:w-auto w-[80%]]">
             <img
               src="./Mesa de trabajo 1 3.png"
               alt="Illustration"
-              className="w-full h-full"
+              className="w-full sm:h-full"
             />
           </div>
 
-          <div className=" w-3/5 lg:pl-16 md:pl-10 pl-5">
+          <div className="md:w-3/5 w-full lg:pl-16 md:pl-10 pl-5">
             <div className="lg:w-[450px] md:w-[350px] w-[200px] lg:ml-[-60px] ml-[-40px]">
               <img
                 src="./HD_logo_final.png"
@@ -255,7 +253,7 @@ export default function Home() {
                 className="w-full object-cover"
               />
             </div>
-            <div className=" w-2/3 lg:mt-[-50px] md:mt-[-30px] mt-[-30px] lg:mb-10 md:mb-5 mb-10">
+            <div className="md:w-2/3 sm:w-[50%]  lg:mt-[-50px] md:mt-[-30px] mt-[-30px] lg:mb-10 md:mb-5 mb-10">
               {/* Description */}
               <p className="text-[#151D50] font-medium text-[20px] xl:text-[28px] leading-[37px] mb-10">
                 Our experienced project management team ensures that your
@@ -263,14 +261,14 @@ export default function Home() {
                 your specifications.
               </p>
               {/* Button */}
-              <button className="mt-8 px-16 py-3 rounded-full bg-[#122377] text-white text-[18px] xl:text-[37px] font-medium hover:brightness-110 active:scale-95 transition lg:mb-28 mb-24">
+              <button className="mt-8 md:px-16 sm:px-14 px-10 py-3 rounded-full bg-[#122377] text-white text-[18px] xl:text-[37px] font-medium hover:brightness-110 active:scale-95 transition lg:mb-28 md:mb-24 sm:mb-16 mb-10">
                 Explore
               </button>
             </div>
           </div>
         </div>
 
-        <div className="text-center mt-16 lg:mb-40 mb-30">
+        <div className="text-center mt-16 lg:mb-40 md:mb-30 mb-20">
           <h2 className="font-semibold xl:text-[97px] md:text-[70px] text-[50px] leading-[104%] tracking-[0] text-[#243761]">
             Take a look at
           </h2>
@@ -282,58 +280,55 @@ export default function Home() {
 
         <div className="xl:my-10 md:w-full lg:container mx-auto md:my-8 md:mt-20">
           <div className="relative w-full">
-            <div className="text-center mb-16">
+            <div className="text-center sm:mb-16 mb-40">
               <img
                 src="./Group 106.png"
                 alt=""
                 className="object-cover lg:w-[200px] md:w-[150px] w-[100px] m-auto"
               />
             </div>
-            <div className="absolute 2xl:right-[11%] xl:right-[4%] xl:top-[-3.5%] lg:top-[-9%] md:top-[-5.5%] top-[-20px] lg:right-[10%] md:right-20 right-10  xl:w-[500px] lg:w-[450px] md:w-[360px] w-[300px] flex items-center gap-4 border border-[#2427BD] rounded-[35px] px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 ">
-              {/* Year */}
-              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-2xl xl:text-[55px] mr-4">
+            <div className="absolute 2xl:right-[11%] xl:right-[4%] xl:top-[-3.5%] lg:top-[-4%] lg:right-[-1%] md:top-[-5.5%] md:right-[5%] sm:top-[-28px] top-[0%] sm:right-[8%] right-0 xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center md:gap-4 gap-2 border border-[#2427BD] md:rounded-[35px] rounded-2xl  md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 sm:flex-row flex-col">
+              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-xl xl:text-[55px] md:mr-3">
                 2025
               </span>
-              {/* Description */}
-              <p className="font-normal lg:text-[22px]  md:text-sm text-xs  leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+
+              <p className="font-normal lg:text-[22px] md:text-sm text-xs md:leading-[28px] leading-[22px] text-start text-[#243761] md:line-clamp-3 line-clamp-4">
                 We follow industry-standard methodologies and employ effective
                 communication
               </p>
             </div>
-            <div className="absolute 2xl:right-[15%] xl:right-[8%] lg:bottom-[35.5%] md:bottom-[33.1%] lg:right-52 md:right-[13%] right-[9%] xl:w-[500px] md:w-[350px] w-[300px] flex items-center gap-4 border border-[#2427BD] rounded-[35px] px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 ">
-              <span className="text-[#243761] font-bold text-2xl xl:text-[55px] mr-4">
+            <div className="absolute 2xl:right-[15%] xl:right-[8%] lg:bottom-[35.5%] lg:right-[5%] md:bottom-[33.1%] sm:bottom-[33.1%] md:right-[13%] right-[12%] bottom-[15%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4 sm:flex-row flex-col ">
+              <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-xl xl:text-[55px] md:mr-3">
                 2023
               </span>
 
-              <p className="font-normal lg:text-[22px]  md:text-sm text-xs  leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+              <p className="font-normal lg:text-[22px]  md:text-sm text-xs md:leading-[28px] leading-[22px] text-start text-[#243761] md:line-clamp-3 line-clamp-4">
                 We follow industry-standard methodologies and employ effective
                 communication
               </p>
             </div>
-            <div className="absolute 2xl:left-[13%] lg:top-[29%] md:top-[26.5%] top-[20%] xl:left-[7%] lg:left-52 md:left-[12.5%] left-[8%]  xl:w-[500px] md:w-[350px] w-[300px] flex items-center gap-4 border border-[#2427BD] rounded-[35px] px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 ">
+            <div className="absolute 2xl:left-[13%] lg:top-[29%] md:top-[26.5%] sm:top-[26%] top-[30%] xl:left-[7%] lg:left-[6%] md:left-[12.5%] sm:left-[13%]  left-[10%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 sm:flex-row flex-col ">
               <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-2xl xl:text-[55px] mr-4">
                 2024
               </span>
 
-              <p className="font-normal lg:text-[22px]  md:text-sm text-xs  leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+              <p className="font-normal lg:text-[22px]  md:text-sm text-xs md:leading-[28px] leading-[22px] text-start text-[#243761] md:line-clamp-3 line-clamp-4">
                 We follow industry-standard methodologies and employ effective
-                communication
               </p>
             </div>
-            <div className="absolute 2xl:left-[12%] xl:left-[5%] xl:bottom-0] lg:bottom-[-1%] md:bottom-[-3%] bottom-0 opacity-65 lg:left-52 md:left-[11%] left-[8%] xl:w-[500px] md:w-[350px] w-[300px] flex items-center gap-4 border border-[#2427BD] rounded-[35px] px-6 py-4 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 ">
-              {/* Year */}
+            <div className="absolute 2xl:left-[12%] xl:left-[5%] xl:bottom-0 lg:bottom-[-1%] md:bottom-[-3%] sm:bottom-[-5%] bottom-[-25%] opacity-65 lg:left-[1%] md:left-[11%] sm:left-[8%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4 sm:flex-row flex-col ">
               <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] text-2xl xl:text-[55px] mr-4">
                 2022
               </span>
-              {/* Description */}
-              <p className="font-normal lg:text-[22px]  md:text-sm text-xs  leading-[28px] tracking-[-0.006em] text-start text-[#243761]">
+
+              <p className="font-normal lg:text-[22px]  md:text-sm text-xs md:leading-[28px] leading-[22px] text-start text-[#243761] md:line-clamp-3 line-clamp-4">
                 We follow industry-standard methodologies and employ effective
                 communication
               </p>
             </div>
           </div>
         </div>
-        <div className="  w-full rounded-b-[246px] pb-3">
+        <div className="w-full sm:rounded-b-[246px] rounded-b-[125px] pb-3">
           <CardSlider />
         </div>
       </section>
@@ -350,7 +345,7 @@ export default function Home() {
         />
         <WhyChooseSection />
       </div>
-      {/* Testimonial */}
+
       <Testimonial />
 
       <FooterSection />

@@ -12,8 +12,8 @@ export default function FooterSection() {
               className="lg:w-full w-[87%]  object-cover"
             />
           </div>
-          <div className="flex relative">
-            <div className="text-[#184BB8] 2xl:w-[45%] xl:w-[50%]  lg:w-[55%] md:w-[55%] w-[50%] lg:px-4 pr-2 h-auto lg:mt-0 mt-40">
+          <div className="flex relative sm:flex-row flex-col">
+            <div className="text-[#184BB8] 2xl:w-[45%] xl:w-[50%]  lg:w-[55%] md:w-[55%] sm:w-[50%] w-full sm:text-start text-center lg:px-4 pr-2 h-auto lg:mt-0 sm:mt-40 ">
               <h3 className="font-semibold lg:text-[58px] md:text-[40px] text-3xl lg:leading-[58px] md:leading-[48px] tracking-[0.07em] ">
                 GỬI YÊU CẦU TƯ VẤN GIẢI PHÁP
               </h3>
@@ -71,7 +71,7 @@ export default function FooterSection() {
              placeholder-blue-400 p-4 [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(3em-2px),#184BB8_calc(3em-2px),#184BB8_3em)] leading-[3em] "
                 ></textarea>
               </div>
-              <button className="mt-4 block m-auto bg-[#122377] text-[#FFFFFF] px-12 py-3 rounded-[40px] font-semibold text-[29px] leading-[150%] tracking-[0%] hover:bg-[#1E3F8A] transition-colors duration-300">
+              <button className="mt-4 block m-auto bg-[#122377] text-[#FFFFFF] md:px-12 sm:px-10 px-6 py-3 rounded-[40px] font-semibold sm:text-[29px] text-2xl leading-[150%] tracking-[0%] hover:bg-[#1E3F8A] transition-colors duration-300">
                 Submit
               </button>
             </div>
@@ -79,7 +79,7 @@ export default function FooterSection() {
         </div>
       </div>
 
-      <div className="border-[3px] border-[#093FB4] rounded-t-[152px] lg:mt-60 mt-50 lg:p-20 p-12 relative outline-none">
+      <div className="border-[3px] border-[#093FB4] rounded-t-[152px] lg:mt-60 sm:mt-50 mt-60 lg:p-20 sm:p-12 p-8 relative outline-none">
         <div className="absolute top-[-12%] left-1/2 -translate-x-1/2 bg-white w-[318px] h-[318px] overflow-hidden rounded-full">
           <img
             src="/HD_logo_final.png"
@@ -95,7 +95,7 @@ export default function FooterSection() {
         </div>
 
         {/* Services Section */}
-        <div className="max-w-5xl m-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-18 mx-auto ">
+        <div className="max-w-5xl m-auto grid grid-cols-2 sm:grid-cols-3 gap-6 mt-18 mx-auto ">
           <div>
             <h3 className="font-bold text-lg md:text-[22px] leading-[22px] tracking-[0.07em] text-[#093FB4]">
               DỊCH VỤ
@@ -134,8 +134,8 @@ export default function FooterSection() {
         </div>
 
         {/* Social Media Section */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 mb-8 lg:mt-30 mt-34 border-[3px] border-[#5389EE] rounded-[62px] overflow-hidden">
-          <div className="text-center px-10 border-r-[3px] border-[#5389EE] pb-9 pt-12">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 mb-8 lg:mt-30 mt-34 border-[3px] border-[#5389EE] rounded-[62px] overflow-hidden">
+          <div className="text-center sm:px-10 border-r-[3px] border-[#5389EE] pb-9 pt-12">
             <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] inline-flex capitalize ml-[-16%]">
               Follow Our
             </p>
@@ -151,7 +151,7 @@ export default function FooterSection() {
             </p>
           </div>
 
-          <div className="text-center px-10 pb-9 pt-12">
+          <div className="text-center sm:px-10 pb-9 pt-12">
             <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] ml-[-14%] inline-flex capitalize">
               Hop Our
             </p>
@@ -167,7 +167,7 @@ export default function FooterSection() {
             </p>
           </div>
 
-          <div className="text-center px-10 pt-20 pb-14 border-[3px] border-b-0 border-l-0 border-[#5389EE] rounded-tl-[62]">
+          <div className="text-center sm:px-10 pt-20 pb-14 border-[3px] border-b-0 border-l-0 border-[#5389EE] rounded-tl-[62]">
             <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] capitalize ml-[-18%] inline-flex">
               Join Our
             </p>
@@ -183,7 +183,7 @@ export default function FooterSection() {
             </p>
           </div>
 
-          <div className="text-center px-10 pt-20 pb-14 border-[3px] border-b-0 border-l-0 border-r-0  border-[#5389EE] rounded-tr-[62px]">
+          <div className="text-center sm:px-10 pt-20 pb-14 border-[3px] border-b-0 border-l-0 border-r-0  border-[#5389EE] rounded-tr-[62px]">
             <p className="text-[#6392FA] font-normal text-lg sm:text-xl md:text-[24px] capitalize ml-[-16%] inline-flex">
               Follow Us On
             </p>
@@ -200,7 +200,7 @@ export default function FooterSection() {
           </div>
         </div>
         {/* Footer */}
-        <p className="lg:w-[90%] w-full m-auto text-center text-[#093FB4] font-medium text-sm sm:text-base md:text-[18px] lg:pb-10 pb-5 capitalize lg:mt-36 mt-44 border-b-2 border-[#093FB4]">
+        <p className="lg:w-[90%] w-full m-auto text-center text-[#093FB4] font-medium text-sm sm:text-base md:text-[18px] lg:pb-10 pb-5 capitalize lg:mt-36 sm:mt-44 mt-30 border-b-2 border-[#093FB4]">
           Copyright © 2025 HD FutureTech.Com | All Rights Reserved
         </p>
       </div>

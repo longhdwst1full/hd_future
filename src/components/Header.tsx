@@ -29,7 +29,7 @@ export default function Header() {
   };
 
   return (
-    <header className=" w-full lg:w-[90%] mx-auto px-4 sm:px-6 xl:px-8  py-4">
+    <header className="w-full xl:w-[90%] mx-auto px-4 sm:px-6 xl:px-8  py-4">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="w-40">
@@ -42,13 +42,13 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:block">
-          <div className="bg-white/95 backdrop-blur-sm rounded-full xl:px-10 px-5 xl:py-3 py-2 shadow-lg">
-            <div className="flex items-center space-x-5  ">
+          <div className="bg-white/95 backdrop-blur-sm rounded-full xl:px-10 lg:px-8 px-5 xl:py-3 py-2 shadow-lg">
+            <div className="flex items-center space-x-5">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`flex items-center lg:mr-2 px-10 py-2 text-lg text-[#093FB4] font-medium transition-colors duration-300 ${
+                  className={`flex items-center lg:mr-2 xl:px-10 lg:px-5 py-2 text-lg text-[#093FB4] font-medium transition-colors duration-300 ${
                     item.active
                       ? "border-[#083DA5] border-b-2"
                       : "hover:border-[#083DA5] hover:border-b-2"
