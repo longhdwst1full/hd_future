@@ -65,42 +65,53 @@ export default function Home() {
         {[
           {
             src: "/Ellipse 13.png",
-            className: "absolute lg:top-[44%] top-[40%] left-[0%]",
+            className: "absolute lg:top-[50%] top-[40%] left-[0%]",
           },
           {
             src: "/Ellipse 15.png",
             className: "absolute top-[40%] right-0 w-[200px]",
           },
           {
-            src: "/Ellipse 21.png",
-            className: "absolute top-[35%] lg:left-[12%]",
+            src: "/Ellipse 14.png",
+            className: "absolute sm:top-[28%] top-[15%] lg:left-[12%] w-[20%] text-[#A7FFE6] backdrop-blur-ultra backdrop-filter",
+          },
+           {
+            src: "/Ellipse 14.png",
+            className: "w-30 absolute sm:top-[20%] top-[35%] left-[1%]",
           },
           {
             src: "/Ellipse 21.png",
             className:
-              "w-[100px] absolute top-[12%] md:right-[10%] right-0 md:top-[28%] top-[20%]",
+              "w-[1%] absolute top-[12%] md:right-[10%] right-0 md:top-[28%] top-[20%]",
           },
           {
             src: "/Ellipse 21.png",
-            className: "w-[50px] absolute top-[38%] right-[30%]",
+            className: "w-[2%] absolute top-[18%] right-[14%]",
+          },
+          {
+            src: "/Ellipse 21.png",
+            className: "w-[2%] absolute top-[38%] right-[30%]",
           },
           {
             src: "/Ellipse 21.png",
             className:
-              "absolute lg:top-[15%] md:top-[45%] left-[3%] w-[70px] top-[25%]",
+              "absolute lg:top-[15%] md:top-[45%] left-[15%] w-[2%] top-[25%]",
+          },
+          {
+            src: "/Ellipse 21.png",
+            className:
+              "absolute left-[10%] w-[1%] top-[30%]",
           },
           {
             src: "/Ellipse 21.png",
             className: "absolute top-[48%] right-[18%] w-[80px]",
           },
-          {
-            src: "/Ellipse 14.png",
-            className: "w-30 absolute top-[20%] left-[16%]",
-          },
-          { src: "/Group 63.png", className: "absolute top-[25%] left-[16%]" },
+         
+          { src: "/Group 63.png", className: "absolute sm:top-[27%] top-[34%] sm:left-[16%] left-[10%] w-[15%]" },
+          { src: "/Group 63.png", className: "absolute top-[40%] right-[4%] w-[10%]" },
           {
             src: "/Group 63.png",
-            className: "w-[100px] absolute top-[14%] right-[18%]",
+            className: "w-[100px] absolute sm:top-[23%] top-[12%] w-[12%] sm:right-[18%] right-[8%]",
           },
         ].map((img, i) => (
           <Image
@@ -133,14 +144,14 @@ export default function Home() {
               custom={1}
             >
               <motion.h1
-                className="lg:text-[97px] md:text-[87px] text-[40px] lg:leading-[150%] font-semibold text-white drop-shadow-lg"
+                className="lg:text-[97px] md:text-[87px] sm:text-[54px] text-[44px] lg:leading-[150%] font-semibold text-white drop-shadow-lg"
                 variants={fadeInUp}
                 custom={2}
               >
                 HD FUTURE. TECH
               </motion.h1>
               <motion.p
-                className="md:text-2xl text-xl text-white/80 font-normal mb-[-25px] z-[9999] "
+                className="md:text-2xl sm:text-xl text-sm text-white/80 font-normal mb-[-25px] z-[9999] "
                 variants={fadeInUp}
                 custom={3}
               >
@@ -182,14 +193,14 @@ export default function Home() {
               </motion.div>
               {/* Buttons */}
               <motion.div
-                className="flex gap-6 mt-5 md:text-[26px] text-lg relative"
+                className="flex gap-6 mt-5 md:text-[26px] sm:text-lg text-[15px] relative"
                 variants={fadeInUp}
                 custom={5}
               >
-                <button className="sm:px-9 px-4 py-3 rounded-full bg-white text-blue-600 font-semibold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-105 active:scale-95 transition cursor-pointer">
+                <button className=" lg:px-12 sm:px-9 px-4 py-3 rounded-full bg-white text-blue-600 font-semibold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-105 active:scale-95 transition cursor-pointer">
                   Contact Us
                 </button>
-                <button className="sm:px-8 px-4 sm:py-3 py-2 rounded-full bg-[#203E80] text-white font-semibold shadow-[inset_0px_6px_7.2px_0px_rgba(108,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-110 active:scale-95 transition cursor-pointer">
+                <button className="lg:px-10 sm:px-8 px-4 sm:py-3 py-2 rounded-full bg-[#203E80] text-white font-semibold shadow-[inset_0px_6px_7.2px_0px_rgba(108,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-110 active:scale-95 transition cursor-pointer">
                   Chat With Us
                 </button>
               </motion.div>
@@ -297,7 +308,7 @@ export default function Home() {
         custom={2}
       >
         <div className="w-[95%] m-auto relative bg-white lg:rounded-[125px] rounded-[70px] md:mx-8 mx-4 overflow-hidden">
-          <div className="absolute inset-0 md:left-[35%] sm:left-[33%] left-[45%] sm:top-[-10%] md:bottom-[-15%] sm:bottom-[-30%] top-[53%] md:w-auto w-[80%]">
+          <div className="absolute inset-0 md:left-[35%] sm:left-[33%] left-[40%] sm:top-[-10%] md:bottom-[-15%] sm:bottom-[-30%] top-[15%] md:w-auto w-[80%]">
             <Image
               src="/Mesa de trabajo 1 3.png"
               alt="Illustration"
@@ -316,8 +327,8 @@ export default function Home() {
                 className="w-full object-cover"
               />
             </div>
-            <div className="md:w-2/3 sm:w-[50%] lg:mt-[-50px] md:mt-[-30px] mt-[-30px] lg:mb-10 md:mb-5 mb-10">
-              <p className="text-[#151D50] font-medium text-[20px] xl:text-[28px] leading-[37px] mb-10">
+            <div className="md:w-2/3 w-[50%] lg:mt-[-50px] md:mt-[-30px] mt-[-30px] lg:mb-10 md:mb-5 sm:mb-10">
+              <p className="text-[#151D50] font-medium text-xs ms:text-[20px] xl:text-[28px] md:leading-[37px] sm:mb-10">
                 Our experienced project management team ensures that your
                 projects are delivered on time, within budget, and according to
                 your specifications.
@@ -331,18 +342,18 @@ export default function Home() {
                   boxShadow: "0 8px 32px 0 rgba(9,63,180,0.15)",
                 }}
                 whileTap={{ scale: 0.96 }}
-                className="mt-8 md:px-16 sm:px-14 px-10 py-3 rounded-full bg-[#122377] text-white text-[18px] xl:text-[37px] font-medium hover:brightness-110 lg:mb-28 md:mb-24 sm:mb-16 mb-10 cursor-pointer animate-fadein"
+                className="sm:mt-8 mt-6 md:px-16 sm:px-14 px-10 py-3 rounded-full bg-[#122377] text-white text-sm sm:text-[18px] xl:text-[37px] font-medium hover:brightness-110 lg:mb-28 md:mb-24 sm:mb-16 mb-10 cursor-pointer animate-fadein"
               >
                 Explore
               </motion.button>
             </div>
           </div>
         </div>
-        <div className="text-center mt-16 lg:mb-40 md:mb-30 mb-20">
-          <h2 className="font-semibold xl:text-[97px] lg:text-[70px] md:text-[60px] text-[50px] leading-[104%] text-[#243761]">
+        <div className="text-center sm:mt-16 mt-12 lg:mb-40 md:mb-30 sm:mb-20 mb-10 font-semibold xl:text-[97px] lg:text-[70px] md:text-[60px] sm:text-[50px] text-[20px] md:leading-[104%]">
+          <h2 className=" text-[#243761]">
             Take a look at
           </h2>
-          <h2 className="mt-1 font-semibold xl:text-[97px] lg:text-[70px] md:text-[60px] text-[50px] leading-[104%] text-[#093FB4]">
+          <h2 className=" text-[#093FB4]">
             Our Workflow About Us
           </h2>
         </div>
@@ -354,7 +365,7 @@ export default function Home() {
 
       {/* Why Choose Section */}
       <motion.div
-        className="relative pb-20"
+        className="relative sm:pb-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
