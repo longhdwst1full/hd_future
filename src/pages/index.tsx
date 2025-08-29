@@ -5,19 +5,36 @@ import Testimonial from "@/components/Testimonial";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import WorkflowSection from "@/components/WorkflowSection";
 import Head from "next/head";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion"; 
 import Image from "next/image";
+import { useEffect, useState } from "react"; 
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: {
+  visible: (i = 1) => ({ 
     opacity: 1,
     y: 0,
-    transition: { delay: 0.3, duration: 0.7, type: "spring" as const },
-  },
+    transition: { delay: 0.15 * i, duration: 0.7, type: "spring" as const }, 
+  }), 
+}; 
+ 
+const parallaxVariants = { 
+  initial: { y: 0 }, 
+  animate: (i: number) => ({ 
+    y: [0, -10, 0], 
+    transition: { repeat: Infinity, duration: 4 + i, ease: [0.42, 0, 0.58, 1] as const }, // cubic-bezier for easeInOut 
+  }), 
 };
 
 export default function Home() {
+  const [showScrollTop, setShowScrollTop] = useState(false); 
+ 
+  useEffect(() => { 
+    const onScroll = () => setShowScrollTop(window.scrollY > 300); 
+    window.addEventListener("scroll", onScroll); 
+    return () => window.removeEventListener("scroll", onScroll); 
+  }, []); 
+ 
   return (
     <>
       <Head>
@@ -44,7 +61,7 @@ export default function Home() {
       </Head>
 
       <div className="relative">
-        {/* Decorative Images */}
+        {/* Decorative Images with Parallax */} 
         {[
           {
             src: "/Ellipse 13.png",
