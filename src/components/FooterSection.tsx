@@ -78,7 +78,7 @@ export default function FooterSection() {
         </div>
       </div>
 
-      <div className="border-[3px] border-[#093FB4] rounded-t-[152px] lg:mt-60 sm:mt-50 mt-44 lg:p-20 sm:p-12 p-8 relative outline-none">
+      <div className="border-[3px] border-[#093FB4] rounded-t-[152px] lg:mt-60 sm:mt-50 mt-32 lg:p-20 sm:p-12 p-8 relative outline-none">
         <div className="absolute top-[-12%] left-1/2 -translate-x-1/2 bg-white w-[318px] h-[318px] overflow-hidden rounded-full">
           <img
             src="/HD_logo_final.png"
@@ -86,7 +86,7 @@ export default function FooterSection() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="text-center lg:mb-6 lg:mt-6 md:mt-12 sm:mt-20 mt-20 relative">
+        <div className="text-center lg:mb-6 lg:mt-6 md:mt-12 sm:mt-20 mt-26 relative">
           <p className="font-medium text-[#184BB8] sm:text-[22px] text-[13px] sm:leading-[21px] tracking-[0.07em] text-center max-w-3xl mx-auto">
             Cung cấp dịch vụ proxy chất lượng cao với sự ổn định và bảo mật
             tuyệt đối cho người dùng Việt Nam.

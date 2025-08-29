@@ -151,7 +151,7 @@ export default function Home() {
                 HD FUTURE. TECH
               </motion.h1>
               <motion.p
-                className="md:text-2xl sm:text-xl text-sm text-white/80 font-normal mb-[-25px] z-[9999] "
+                className="md:text-2xl sm:text-xl text-sm text-white/80 font-normal sm:mb-[-25px] mb-0 z-[9999] "
                 variants={fadeInUp}
                 custom={3}
               >
