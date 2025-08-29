@@ -48,7 +48,7 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`flex items-center lg:mr-2 xl:px-10 lg:px-5 py-2 text-2xl text-[#093FB4] font-medium transition-colors duration-300 ${
+                  className={`flex items-center lg:mr-2 xl:px-3.5 xl:mx-6.5 lg:mx-2 lg:px-3 py-2 text-2xl text-[#093FB4] font-medium transition-colors duration-300 ${
                     item.active
                       ? "border-[#083DA5] border-b-2"
                       : "hover:border-[#083DA5] hover:border-b-2"

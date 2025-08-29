@@ -127,12 +127,13 @@ export default function Home() {
             <motion.div
               className="flex flex-col items-center justify-center text-center px-4 relative"
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
               variants={fadeInUp}
               custom={1}
             >
               <motion.h1
-                className="lg:text-[97px] md:text-[87px] text-[40px] lg:leading-[150%] font-semibold text-white"
+                className="lg:text-[97px] md:text-[87px] text-[40px] lg:leading-[150%] font-semibold text-white drop-shadow-lg"
                 variants={fadeInUp}
                 custom={2}
               >
@@ -199,7 +200,7 @@ export default function Home() {
               className="relative h-[450px] lg:h-[650px] md:h-[560px] sm:h-[500px] xl:h-[720px] w-full overflow-hidden"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.3 }}
               variants={fadeInUp}
               custom={6}
             >
@@ -249,7 +250,7 @@ export default function Home() {
         className="w-full relative md:m-0 my-4"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.2 }}
         variants={fadeInUp}
         custom={1}
       >
@@ -262,7 +263,7 @@ export default function Home() {
             "/banner_ls_logo_code.png",
             "/banner_ls_logo_otp.png",
           ].map((src, i) => (
-            <div
+            <motion.div
               key={i}
               className={
                 i % 3 === 2
@@ -271,6 +272,8 @@ export default function Home() {
                   ? "w-56"
                   : "w-[146px]"
               }
+              whileHover={{ scale: 1.08, rotate: 2 }}
+              transition={{ type: "spring", stiffness: 200 }}
             >
               <Image
                 src={src}
@@ -279,7 +282,7 @@ export default function Home() {
                 height={60}
                 className="object-cover w-full"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </motion.section>
@@ -354,7 +357,7 @@ export default function Home() {
         className="relative pb-20"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.2 }}
         variants={fadeInUp}
         custom={3}
       >
