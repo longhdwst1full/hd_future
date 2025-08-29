@@ -1,8 +1,6 @@
 // components/WorkflowSection.tsx
  
 export default function WorkflowSection() {
- 
-
   return (
     <div className="xl:my-10 md:w-full lg:container mx-auto md:my-8 md:mt-20">
       <div className="relative w-full">

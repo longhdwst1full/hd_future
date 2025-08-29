@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.animate-fadein {
+  opacity: 0;
+  animation: fadein 1s forwards;
+}
+.animate-fadein-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeinUp 0.8s forwards;
+}
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeinUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

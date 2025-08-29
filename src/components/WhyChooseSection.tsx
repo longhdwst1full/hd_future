@@ -41,9 +41,9 @@ const services = [
 export default function WhyChooseSection() {
   return (
     <div className="lg:w-[90%] w-full mx-auto lg:p-6 p-4 rounded-2xl relative lg:mt-8">
-      <h2 className="font-semibold lg:text-[43px] md:text-[33px] text-2xl leading-[150%] tracking-[0em] text-center text-[#243761] lg:mb-28 mb-20 sm:w-full w-[80%] m-auto">
+      <h2 className="font-semibold lg:text-[43px] md:text-[33px] text-2xl leading-[150%] tracking-[0em] text-center text-[#243761] lg:mb-28 mb-20 sm:w-full w-[90%] m-auto">
         VÌ SAO HD FUTURE. TECH LÀ{" "}
-        <span className="text-[#093FB4]">SỰ LỰA CHỌN HÀNG ĐẦU</span> <br /> ĐẦU
+        <span className="text-[#093FB4]">SỰ LỰA CHỌN HÀNG ĐẦU</span> <br className="xl:block hidden" /> ĐẦU
         CHO DOANH NGHIỆP?
       </h2>
       <div className="flex flex-wrap justify-center gap-3 xl:gap-14 md:gap-7 sm:gap-5 lg:p-0 sm:px-16">

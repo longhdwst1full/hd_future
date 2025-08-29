@@ -25,26 +25,26 @@ export default function FooterSection() {
             <div className="flex-1 2xl:w-2/3 lg:my-0 my-10 mt-14 xl:mt-0 xl:mb-0 lg:mb-18 mb-24">
               <div className="grid grid-cols-2 md:gap-4 gap-2">
                 <div className=" lg:p-10 md:p-5 p-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
-                  <p className="text-[22px] font-semibold p-2 mb-2">
+                  <p className="sm:text-[22px] text-base font-semibold p-2 mb-2">
                     Full Name
                   </p>
                   <input
                     type="text"
                     placeholder="Type here"
-                    className="p-2 focus:outline-none focus:border-b-2 border-[#184BB8]  w-full border-0 border-b b  focus:border-blue-500 focus:ring-0 text-blue-600 placeholder-blue-400"
+                    className="p-2 focus:outline-none focus:border-b-2 border-[#184BB8]  w-full border-0 border-b focus:border-blue-500 focus:ring-0 text-blue-600 placeholder-blue-400"
                   />
                 </div>
-                <div className="lg:p-10 md:p-5 p-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
-                  <p className="text-[22px] font-semibold p-2 mb-2">Email</p>
+                <div className="lg:p-10 md:p-5 p-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden sm:text-[22px] text-base">
+                  <p className="font-semibold p-2 mb-2">Email</p>
                   <input
                     type="text"
                     placeholder="Type here"
-                    className="p-2   border-[#184BB8] focus:outline-none focus:border-b-2 border-b-[#184BB8]  w-full border-0 border-b   focus:border-blue-500 focus:ring-0 text-blue-600 placeholder-blue-400"
+                    className="p-2 border-[#184BB8] focus:outline-none focus:border-b-2 border-b-[#184BB8] w-full border-0 border-b focus:border-blue-500 focus:ring-0 text-blue-600 placeholder-blue-400"
                   />
                 </div>
               </div>
-              <div className="lg:p-10 md:p-5 p-3 mt-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
-                <p className="text-[22px] font-medium p-2 mb-2">
+              <div className="lg:p-10 md:p-5 p-3 mt-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden sm:text-[22px] text-base">
+                <p className="font-semibold p-2 mb-2">
                   Why are you contacting us?
                 </p>
                 <div className="grid grid-cols-2 gap-2 text-[#3768C4]">
@@ -62,15 +62,15 @@ export default function FooterSection() {
                   </label>
                 </div>
               </div>
-              <div className="lg:p-10 p-5 mt-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden">
-                <p className="text-[22px] font-medium p-2 mb-2">Your Message</p>
+              <div className="lg:p-10 p-5 mt-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden sm:text-[22px] text-base">
+                <p className="font-semibold p-2 mb-2">Your Message</p>
                 <textarea
                   rows={2}
                   placeholder="Your Message"
                   className="w-full resize-none bg-transparent outline-none border-0 placeholder-blue-400 p-4 [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(3em-2px),#184BB8_calc(3em-2px),#184BB8_3em)] leading-[3em]"
                 ></textarea>
               </div>
-              <button className="mt-4 block m-auto bg-[#122377] text-[#FFFFFF] md:px-12 sm:px-10 px-6 py-3 rounded-[40px] font-semibold sm:text-[29px] text-2xl leading-[150%] tracking-[0%] hover:bg-[#1E3F8A] transition-colors duration-300 cursor-pointer">
+              <button className="mt-4 block m-auto bg-[#122377] text-[#FFFFFF] md:px-12 sm:px-10 px-6 py-3 rounded-[40px] font-semibold sm:text-[29px] text-xl leading-[150%] tracking-[0%] hover:bg-[#1E3F8A] transition-colors duration-300 cursor-pointer">
                 Submit
               </button>
             </div>

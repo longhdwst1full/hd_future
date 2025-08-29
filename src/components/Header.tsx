@@ -64,7 +64,7 @@ export default function Header() {
 
         {/* Contact Button (Desktop) */}
         <div className="hidden lg:block">
-          <button className="bg-white hover:bg-gray-50 text-[#093FB4] text-lg transition-all duration-300 hover:scale-105 xl:px-5 px-4 py-2 xl:py-[18px] rounded-full font-bold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] cursor-pointer">
+          <button className="bg-white hover:bg-gray-50 text-[#093FB4] text-lg transition-all duration-300 hover:scale-105 xl:px-5 px-4 lg:py-4.5 py-2 xl:py-[18px] rounded-full font-bold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] cursor-pointer">
             Contact Us
           </button>
         </div>

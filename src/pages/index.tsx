@@ -13,7 +13,7 @@ const fadeInUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { delay: 0.15, duration: 0.7, type: "spring" as const },
+    transition: { delay: 0.3, duration: 0.7, type: "spring" as const },
   },
 };
 
@@ -46,19 +46,22 @@ export default function Home() {
       <div className="relative">
         {/* Decorative Images */}
         {[
-          { src: "/Ellipse 13.png", className: "absolute top-[35%] left-[0%]" },
+          {
+            src: "/Ellipse 13.png",
+            className: "absolute lg:top-[44%] top-[40%] left-[0%]",
+          },
           {
             src: "/Ellipse 15.png",
-            className: "absolute top-[28%] right-[0%]",
+            className: "absolute top-[40%] right-0 w-[200px]",
           },
           {
             src: "/Ellipse 21.png",
-            className: "absolute top-[28%] left-[10%]",
+            className: "absolute top-[35%] lg:left-[12%]",
           },
           {
             src: "/Ellipse 21.png",
             className:
-              "w-[100px] absolute top-[12%] md:right-[10%] right-0 md:top-[28%]",
+              "w-[100px] absolute top-[12%] md:right-[10%] right-0 md:top-[28%] top-[20%]",
           },
           {
             src: "/Ellipse 21.png",
@@ -66,7 +69,12 @@ export default function Home() {
           },
           {
             src: "/Ellipse 21.png",
-            className: "absolute top-[18%] left-[30%]",
+            className:
+              "absolute lg:top-[15%] md:top-[45%] left-[3%] w-[70px] top-[25%]",
+          },
+          {
+            src: "/Ellipse 21.png",
+            className: "absolute top-[48%] right-[18%] w-[80px]",
           },
           {
             src: "/Ellipse 14.png",
@@ -114,7 +122,7 @@ export default function Home() {
                 HD FUTURE. TECH
               </motion.h1>
               <motion.p
-                className="md:text-2xl text-xl text-white/80 font-normal mb-[-25px]"
+                className="md:text-2xl text-xl text-white/80 font-normal mb-[-25px] z-[9999] "
                 variants={fadeInUp}
                 custom={3}
               >
@@ -160,64 +168,59 @@ export default function Home() {
                 variants={fadeInUp}
                 custom={5}
               >
-                <button className="px-9 py-3 rounded-full bg-white text-blue-600 font-semibold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-105 active:scale-95 transition cursor-pointer">
+                <button className="sm:px-9 px-4 py-3 rounded-full bg-white text-blue-600 font-semibold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-105 active:scale-95 transition cursor-pointer">
                   Contact Us
                 </button>
-                <button className="px-8 py-3 rounded-full bg-[#203E80] text-white font-semibold shadow-[inset_0px_6px_7.2px_0px_rgba(108,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-110 active:scale-95 transition cursor-pointer">
+                <button className="sm:px-8 px-4 sm:py-3 py-2 rounded-full bg-[#203E80] text-white font-semibold shadow-[inset_0px_6px_7.2px_0px_rgba(108,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] hover:brightness-110 active:scale-95 transition cursor-pointer">
                   Chat With Us
                 </button>
               </motion.div>
+              <div className="relative w-full lg:h-32 h-20"></div>
             </motion.div>
             {/* Network Illustration */}
             <motion.div
-              className="relative h-[400px] md:h-[630px] xl:h-[750px] w-full"
+              className="relative h-[450px] lg:h-[650px] md:h-[560px] sm:h-[500px] xl:h-[720px] w-full overflow-hidden"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
               custom={6}
             >
-              <div className="absolute top-0 left-[-400px] right-[-360px] bottom-0">
-                <Image
-                  src="/Ellipse 12.png"
-                  alt=""
-                  width={1200}
-                  height={750}
-                  className="h-full"
-                />
+              <div className="absolute top-0 left-[-400px] right-[-360px] bottom-0 w-auto">
+                <img src="./Ellipse 12.png" alt="" className="h-full z-[99]" />
                 <div className="absolute top-[15%] left-[25%] right-[22%] 2xl:top-[15%] 2xl:left-[29%] 2xl:right-[0%]">
-                  <Image
-                    src="/connect-network.png"
-                    alt=""
-                    width={600}
-                    height={400}
-                  />
+                  <img src="./connect-network.png" alt="" className="  " />
                 </div>
-                {[
-                  "22% 41%",
-                  "40% 36%",
-                  "50% 50%",
-                  "31% 45%",
-                  "65% 42%",
-                  "20% 38%",
-                ].map((pos, i) => {
-                  const [top, leftOrRight] = pos.split(" ");
-                  const isLeft = i % 2 === 0;
-                  return (
-                    <Image
-                      key={i}
-                      src="/Group 95.png"
-                      alt=""
-                      width={80}
-                      height={80}
-                      className={`absolute top-[${top}] ${
-                        isLeft
-                          ? `left-[${leftOrRight}]`
-                          : `right-[${leftOrRight}]`
-                      }`}
-                    />
-                  );
-                })}
+                <img
+                  src="./Group 95.png"
+                  alt=""
+                  className="absolute top-[22%] left-[41%]"
+                />
+                <img
+                  src="./Group 95.png"
+                  alt=""
+                  className="absolute top-[40%] right-[36%]"
+                />
+                <img
+                  src="./Group 95.png"
+                  alt=""
+                  className="absolute top-[50%] left-[50%]"
+                />
+                <img
+                  src="./Group 95.png"
+                  alt=""
+                  className="absolute top-[31%] right-[45%]"
+                />
+                <img
+                  src="./Group 95.png"
+                  alt=""
+                  className="absolute sm:top-[65%] top-[55%] left-[42%]"
+                />
+                <img
+                  src="./Group 95.png"
+                  alt=""
+                  className="absolute top-[20%] right-[38%]"
+                />
               </div>
             </motion.div>
           </div>
@@ -308,7 +311,7 @@ export default function Home() {
                   boxShadow: "0 8px 32px 0 rgba(9,63,180,0.15)",
                 }}
                 whileTap={{ scale: 0.96 }}
-                className="mt-8 md:px-16 sm:px-14 px-10 py-3 rounded-full bg-[#122377] text-white text-[18px] xl:text-[37px] font-medium hover:brightness-110 active:scale-95 transition lg:mb-28 md:mb-24 sm:mb-16 mb-10 cursor-pointer"
+                className="mt-8 md:px-16 sm:px-14 px-10 py-3 rounded-full bg-[#122377] text-white text-[18px] xl:text-[37px] font-medium hover:brightness-110 lg:mb-28 md:mb-24 sm:mb-16 mb-10 cursor-pointer animate-fadein"
               >
                 Explore
               </motion.button>
