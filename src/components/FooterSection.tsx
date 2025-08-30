@@ -13,13 +13,12 @@ export default function FooterSection() {
             />
           </div>
           <div className="flex relative sm:flex-row flex-col">
-            <div className="text-[#184BB8] 2xl:w-[45%] xl:w-[50%]  lg:w-[55%] md:w-[55%] sm:w-[50%] w-full sm:text-start text-center lg:px-4 pr-2 h-auto lg:mt-0 sm:mt-40 ">
-              <h3 className="font-semibold lg:text-[58px] md:text-[40px] sm:text-3xl text-[17px] lg:leading-[58px] md:leading-[48px] tracking-[0.07em] ">
+            <div className="text-[#184BB8] 2xl:w-[32%] xl:w-[50%] lg:w-[55%] md:w-[45%] sm:w-[46%] w-full sm:text-start text-center  pr-2 h-auto lg:mt-0 sm:mt-40 ">
+              <h3 className="font-semibold lg:text-[58px] md:text-[40px] sm:text-3xl text-[17px] lg:leading-[58px] md:leading-[48px] tracking-[7%] ">
                 GỬI YÊU CẦU TƯ VẤN GIẢI PHÁP
               </h3>
-              <p className="sm:mt-5 mt-2 font-medium lg:text-[21px] md:text-[17px] sm:text-[15px] text-[10px] md:leading-[24px] sm:mb-5">
-                Chúng tôi luôn tư vấn dịch vụ miễn phí. Chúng tôi sẽ liên hệ báo
-                giá theo thông tin mà bạn để lại.
+              <p className="sm:mt-4 mt-2 font-medium lg:text-[21px] md:text-[17px] sm:text-[15px] text-[10px] xl:pr-2.5 xl:mr-6 md:leading-[24px] tracking-[1%] sm:mb-5">
+                Chúng tôi luôn tư vấn dịch vụ miễn phí. Chúng tôi sẽ liên hệ báo giá theo thông tin mà bạn để lại.
               </p>
             </div>
             <div className="flex-1 2xl:w-2/3 lg:my-0 my-10 sm:mt-14 mt-8 xl:mt-0 xl:mb-0 lg:mb-18 sm:mb-24 mb-[82%]">
@@ -49,16 +48,16 @@ export default function FooterSection() {
                 </p>
                 <div className="grid grid-cols-2 gap-2 text-[#3768C4]">
                   <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" /> HD FutureTech
+                    <input type="checkbox" defaultChecked checked className="mr-2 p-2 inline-block w-7 h-7 focus:border-blue-500 focus:ring-0 outline-none text-[#BFE2F8] border-[1px] border-[#184BB8]" /> HD FutureTech
                   </label>
                   <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" /> HD Codelad
+                    <input type="checkbox" className="mr-2 p-2 inline-block w-7 h-7 text-[#BFE2F8] border-[1px] border-[#184BB8]" /> HD Codelad
                   </label>
                   <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" /> Fun FTP
+                    <input type="checkbox" className="mr-2 p-2 inline-block w-7 h-7 text-[#BFE2F8] border-[1px] border-[#184BB8]" /> Fun FTP
                   </label>
                   <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" /> Others
+                    <input type="checkbox" className="mr-2 p-2 inline-block w-7 h-7 text-[#BFE2F8] border-[1px] border-[#184BB8]" /> Others
                   </label>
                 </div>
               </div>
@@ -87,14 +86,14 @@ export default function FooterSection() {
           />
         </div>
         <div className="text-center lg:mb-6 lg:mt-6 md:mt-12 sm:mt-20 mt-26 relative">
-          <p className="font-medium text-[#184BB8] sm:text-[22px] text-[13px] sm:leading-[21px] tracking-[0.07em] text-center max-w-3xl mx-auto">
+          <p className="font-medium text-[#184BB8] sm:text-[22px] text-[13px] sm:leading-[21px] tracking-[7%] text-center max-w-3xl mx-auto">
             Cung cấp dịch vụ proxy chất lượng cao với sự ổn định và bảo mật
             tuyệt đối cho người dùng Việt Nam.
           </p>
         </div>
 
         {/* Services Section */}
-        <div className="max-w-5xl m-auto grid grid-cols-3 sm:gap-6 gap-1.5 sm:mt-18 mx-auto mt-12 relative z-[999]">
+        <div className="lg:max-w-5xl max-w-2xl m-auto grid grid-cols-3 lg::gap-6 sm:gap-3 gap-1.5 sm:mt-18 mx-auto mt-12 relative z-[999]">
           <div>
             <h3 className="font-bold text-[17px] md:text-[22px] sm:leading-[22px] tracking-[0.07em] text-[#093FB4]">
               DỊCH VỤ
@@ -135,7 +134,7 @@ export default function FooterSection() {
         {/* Social Media Section */}
         <div className="max-w-5xl mx-auto grid grid-cols-2 mb-8 lg:mt-30 sm:mt-34 mt-20 border-[3px] border-[#5389EE] rounded-[62px] overflow-hidden">
           <div className="text-center sm:px-10 border-r-[3px] border-[#5389EE] sm:pb-9 pb-6 sm:pt-12 pt-9">
-            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] inline-flex capitalize ml-[-16%]">
+            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] inline-flex capitalize lg:ml-[-16%] ml-[-20%]">
               Follow Our
             </p>
             <p className="text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
@@ -151,7 +150,7 @@ export default function FooterSection() {
           </div>
 
           <div className="text-center sm:px-10 sm:pb-9 pb-6 sm:pt-12 pt-9">
-            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] ml-[-18%] inline-flex capitalize">
+            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] lg:ml-[-18%] ml-[-21%] inline-flex capitalize">
               Hop Our
             </p>
             <p className="text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
@@ -167,10 +166,10 @@ export default function FooterSection() {
           </div>
 
           <div className="text-center sm:px-10 sm:pt-20 pt-12 sm:pb-14 pb-12 border-[3px] border-b-0 border-l-0 border-[#5389EE] rounded-tl-[62]">
-            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] capitalize ml-[-25%] inline-flex">
+            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] capitalize lg:ml-[-25%] ml-[-30%] inline-flex">
               Join Our
             </p>
-            <p className="text-[#093FB4] sm:mt-2 font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
+            <p className="text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
               Telegram{" "}
               <span className="inline-block ml-2 text-blue-500 border rounded-full w-7 h-7 p-1">
                 <img
@@ -183,10 +182,10 @@ export default function FooterSection() {
           </div>
 
           <div className="text-center sm:pt-20 pt-12 sm:pb-14 pb-12 border-[3px] border-b-0 border-l-0 border-r-0  border-[#5389EE] rounded-tr-[62px]">
-            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] capitalize ml-[-18%] inline-flex">
+            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] capitalize lg:ml-[-14%] ml-[-17%] inline-flex">
               Follow Us On
             </p>
-            <p className="text-[#093FB4] sm:mt-2 font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
+            <p className="text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
               Instagram{" "}
               <span className="inline-block ml-2 text-blue-500 border rounded-full w-7 h-7 p-1">
                 <img

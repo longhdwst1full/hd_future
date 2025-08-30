@@ -151,7 +151,7 @@ export default function Home() {
                 HD FUTURE. TECH
               </motion.h1>
               <motion.p
-                className="md:text-2xl sm:text-xl text-sm text-white/80 font-normal sm:mb-[-25px] mb-0 z-[9999] "
+                className="md:text-2xl sm:text-xl text-sm text-white/80 font-normal sm:mb-[-10px] mb-0 z-[9999] "
                 variants={fadeInUp}
                 custom={3}
               >
@@ -181,11 +181,11 @@ export default function Home() {
                     className="w-full object-cover"
                   />
                 </div>
-                <div className="md:w-36 mt-[-15px]">
+                <div className="md:w-36 mt-[0px] 2xl:ml-[-9%] xl:ml-[-5%] ml-[-7%]">
                   <Image
                     src="/banner_logo_otp_.png"
                     alt=""
-                    width={144}
+                    width={148}
                     height={36}
                     className="w-full object-cover"
                   />
@@ -328,7 +328,7 @@ export default function Home() {
               />
             </div>
             <div className="md:w-2/3 w-[50%] lg:mt-[-50px] md:mt-[-30px] mt-[-30px] lg:mb-10 md:mb-5 sm:mb-10">
-              <p className="text-[#151D50] font-medium text-xs ms:text-[20px] xl:text-[28px] md:leading-[37px] sm:mb-10">
+              <p className="text-[#151D50] font-medium text-xs ms:text-[20px] xl:text-[28px] lg:leading-[37px] md:leading-[30px] md:mb-3 sm:mb-10">
                 Our experienced project management team ensures that your
                 projects are delivered on time, within budget, and according to
                 your specifications.
@@ -342,14 +342,14 @@ export default function Home() {
                   boxShadow: "0 8px 32px 0 rgba(9,63,180,0.15)",
                 }}
                 whileTap={{ scale: 0.96 }}
-                className="sm:mt-8 mt-6 md:px-16 sm:px-14 px-10 py-3 rounded-full bg-[#122377] text-white text-sm sm:text-[18px] xl:text-[37px] font-medium hover:brightness-110 lg:mb-28 md:mb-24 sm:mb-16 mb-10 cursor-pointer animate-fadein"
+                className="lg:mt-8 md:mt-0 mt-6 md:px-16 sm:px-14 px-10 py-3 rounded-full bg-[#122377] text-white text-sm sm:text-[18px] xl:text-[37px] font-medium hover:brightness-110 lg:mb-28 md:mb-24 sm:mb-16 mb-10 cursor-pointer animate-fadein"
               >
                 Explore
               </motion.button>
             </div>
           </div>
         </div>
-        <div className="text-center sm:mt-16 mt-12 lg:mb-40 md:mb-30 sm:mb-20 mb-10 font-semibold xl:text-[97px] lg:text-[70px] md:text-[60px] sm:text-[50px] text-[20px] md:leading-[104%]">
+        <div className="text-center sm:mt-16 mt-12 lg:mb-40 md:mb-30 sm:mb-20 mb-10 font-semibold xl:text-[97px] md:text-[71px] sm:text-[50px] text-[20px] lg:leading-[104%] md:leading-[97%]">
           <h2 className=" text-[#243761]">
             Take a look at
           </h2>

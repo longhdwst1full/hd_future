@@ -21,7 +21,7 @@ export default function WorkflowSection() {
             communication
           </p>
         </div>
-        <div className="absolute 2xl:right-[15%] xl:right-[8%] lg:bottom-[35.5%] lg:right-[5%] md:bottom-[33.1%] sm:bottom-[33.1%] md:right-[13%] right-[11%] bottom-[35%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4">
+        <div className="absolute 2xl:right-[15%] xl:right-[8%] lg:bottom-[35.5%] lg:right-[5%] md:bottom-[34%] sm:bottom-[33.1%] md:right-[12%] right-[11%] bottom-[35%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:left-[-35px] after:text-4xl after:text-blue-900 after:border-l-[35px] after:border-t-4">
           <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] sm:text-xl text-base xl:text-[55px] md:mr-2">
             2023
           </span>
@@ -31,7 +31,7 @@ export default function WorkflowSection() {
             communication
           </p>
         </div>
-        <div className="absolute 2xl:left-[16%] lg:top-[29%] md:top-[26.5%] sm:top-[26%] top-[29%] xl:left-[7%] lg:left-[6%] md:left-[12.5%] sm:left-[13%]  left-[11%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4">
+        <div className="absolute 2xl:left-[16%] lg:top-[29%] md:top-[27.5%] sm:top-[26%] top-[29%] xl:left-[7%] lg:left-[6%] md:left-[12.5%] sm:left-[13%]  left-[11%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4">
           <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] sm:text-xl text-base xl:text-[55px] md:mr-2">
             2024
           </span>
@@ -40,7 +40,7 @@ export default function WorkflowSection() {
             We follow industry-standard methodologies and employ effective
           </p>
         </div>
-        <div className="absolute 2xl:left-[13%] xl:left-[5%] xl:bottom-0 lg:bottom-[-1%] md:bottom-[-3%] sm:bottom-[-5%] bottom-[-1%] opacity-65 lg:left-[1%] md:left-[11%] sm:left-[8%] left-[7%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4">
+        <div className="absolute 2xl:left-[13%] xl:left-[5%] xl:bottom-0 lg:bottom-[-1%] md:bottom-[-2%] sm:bottom-[-3%] bottom-[-1%] opacity-65 lg:left-[1%] md:left-[8.5%] sm:left-[8%] left-[7%] xl:w-[500px] lg:w-[450px] md:w-[360px] sm:w-[250px] w-[160px] flex items-center gap-4 border border-[#2427BD] md:rounded-[35px] rounded-2xl md:px-6 px-4 md:py-4 py-2 bg-white shadow-[0px_8px_3.4px_-3px_#67BBFF82] after:content-[' '] after:absolute after:right-[-35px] after:text-4xl after:text-blue-900 after:border-r-[35px] after:border-t-4">
           <span className="text-[#243761] font-bold lg:text-[45px] md:text-[33px] sm:text-xl text-base xl:text-[55px] md:mr-2">
             2022
           </span>
