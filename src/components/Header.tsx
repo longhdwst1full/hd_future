@@ -64,7 +64,7 @@ export default function Header() {
 
         {/* Contact Button (Desktop) */}
         <div className="hidden lg:block">
-          <button className="bg-white hover:bg-gray-50 text-[#093FB4] text-lg transition-all duration-300 hover:scale-105 xl:px-6 px-4 lg:py-5 py-2 xl:py-[18px] rounded-full font-bold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] cursor-pointer">
+          <button className="bg-white hover:bg-gray-50 text-[#093FB4] text-[20px] transition-all duration-300 hover:scale-105 xl:px-6 px-4 lg:py-5 py-2 xl:py-[18px] rounded-full font-bold shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] cursor-pointer">
             Contact Us
           </button>
         </div>
@@ -79,7 +79,7 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-50 bg-black/50 lg:hidden">
+        <div className="fixed inset-0 z-[9999999999] bg-black/50 lg:hidden">
           <div className="fixed right-0 top-0 h-full w-72 bg-white shadow-xl p-6 flex flex-col transition-transform duration-300">
             <div className="flex justify-between items-center mb-6">
               <span className="font-bold text-xl text-[#093FB4]">Menu</span>

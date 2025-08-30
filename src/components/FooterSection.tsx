@@ -34,7 +34,9 @@ export default function FooterSection() {
                   />
                 </div>
                 <div className="lg:p-10 md:p-5 p-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden lg:text-[20px] md:text-lg sm:text-base text-[13px]">
-                  <p className="font-semibold p-2 mb-2 lg:text-[22px] md:text-xl sm:text-lg text-[15px]">Email</p>
+                  <p className="font-semibold p-2 mb-2 lg:text-[22px] md:text-xl sm:text-lg text-[15px]">
+                    Email
+                  </p>
                   <input
                     type="text"
                     placeholder="Type here"
@@ -48,25 +50,48 @@ export default function FooterSection() {
                 </p>
                 <div className="grid grid-cols-2 gap-2 text-[#3768C4]">
                   <label className="flex items-center">
-                    <input type="checkbox" defaultChecked checked className="mr-2 p-2 inline-block w-7 h-7 focus:border-blue-500 focus:ring-0 outline-none text-[#BFE2F8] border-[1px] border-[#184BB8]" /> HD FutureTech
+                    <input
+                      type="checkbox"
+                      defaultChecked
+                      checked
+                      className="mr-2 p-2 inline-block w-7 h-7 focus:border-blue-500 focus:ring-0 outline-none text-[#BFE2F8] border-[1px] border-[#184BB8]"
+                    />{" "}
+                    HD FutureTech
                   </label>
                   <label className="flex items-center">
-                    <input type="checkbox" className="mr-2 p-2 inline-block w-7 h-7 text-[#BFE2F8] border-[1px] border-[#184BB8]" /> HD Codelad
+                    <input
+                      type="checkbox"
+                      className="mr-2 p-2 inline-block w-7 h-7 text-[#BFE2F8] border-[1px] border-[#184BB8]"
+                    />{" "}
+                    HD Codelad
                   </label>
                   <label className="flex items-center">
-                    <input type="checkbox" className="mr-2 p-2 inline-block w-7 h-7 text-[#BFE2F8] border-[1px] border-[#184BB8]" /> Fun FTP
+                    <input
+                      type="checkbox"
+                      className="mr-2 p-2 inline-block w-7 h-7 text-[#BFE2F8] border-[1px] border-[#184BB8]"
+                    />{" "}
+                    Fun FTP
                   </label>
                   <label className="flex items-center">
-                    <input type="checkbox" className="mr-2 p-2 inline-block w-7 h-7 text-[#BFE2F8] border-[1px] border-[#184BB8]" /> Others
+                    <input
+                      type="checkbox"
+                      className="mr-2 p-2 inline-block w-7 h-7 text-[#BFE2F8] border-[1px] border-[#184BB8]"
+                    />{" "}
+                    Others
                   </label>
                 </div>
               </div>
               <div className="lg:p-10 p-5 mt-3 border-[1px] border-[#262626] text-[#3768C4] flex flex-col rounded-3xl overflow-hidden lg:text-[20px] md:text-lg sm:text-base text-[13px]">
-                <p className="font-semibold p-2 sm:mb-2 lg:text-[22px] md:text-xl sm:text-lg text-[15px]">Your Message</p>
+                <p className="font-semibold p-2 sm:mb-2 lg:text-[22px] md:text-xl sm:text-lg text-[15px] mb-2">
+                  Your Message
+                </p>
                 <textarea
                   rows={2}
                   placeholder="Your Message"
-                  className="w-full resize-none bg-transparent outline-none border-0 placeholder-blue-400 p-4 [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(3em-2px),#184BB8_calc(3em-2px),#184BB8_3em)] leading-[3em]"
+                  className="w-full resize-none bg-transparent outline-none border-0 placeholder-blue-400 sm:p-4
+                   sm:[background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(3em-2px),#184BB8_calc(3em-2px),#184BB8_3em)] 
+                   [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(2em-2px),#184BB8_2em)] 
+                   sm:leading-[3em] leading-[2em] sm:[background-position-y:1.2em] [background-position-y:2em]"
                 ></textarea>
               </div>
               <button className="mt-4 block m-auto bg-[#122377] text-[#FFFFFF] md:px-12 sm:px-10 px-6 py-3 rounded-[40px] font-semibold sm:text-[29px] text-xl leading-[150%] tracking-[0%] hover:bg-[#1E3F8A] transition-colors duration-300 cursor-pointer">
@@ -93,7 +118,7 @@ export default function FooterSection() {
         </div>
 
         {/* Services Section */}
-        <div className="lg:max-w-5xl max-w-2xl m-auto grid grid-cols-3 lg::gap-6 sm:gap-3 gap-1.5 sm:mt-18 mx-auto mt-12 relative z-[999]">
+        <div className="lg:max-w-2xl max-w-2xl m-auto grid grid-cols-3 lg:gap-6 sm:gap-3 gap-1.5 sm:mt-18 mx-auto mt-12 relative z-[999]">
           <div>
             <h3 className="font-bold text-[17px] md:text-[22px] sm:leading-[22px] tracking-[0.07em] text-[#093FB4]">
               DỊCH VỤ

@@ -151,7 +151,7 @@ export default function Home() {
                 HD FUTURE. TECH
               </motion.h1>
               <motion.p
-                className="md:text-2xl sm:text-xl text-sm text-white/80 font-normal sm:mb-[-10px] mb-0 z-[9999] "
+                className="md:text-2xl sm:text-xl text-sm text-white/80 font-normal sm:mb-[-10px] mb-[-5%] z-[9999] "
                 variants={fadeInUp}
                 custom={3}
               >
@@ -193,7 +193,7 @@ export default function Home() {
               </motion.div>
               {/* Buttons */}
               <motion.div
-                className="flex gap-6 mt-5 md:text-[26px] sm:text-lg text-[15px] relative"
+                className="flex sm:gap-6 gap-4 sm:mt-5 md:text-[26px] sm:text-lg text-[15px] relative"
                 variants={fadeInUp}
                 custom={5}
               >
@@ -208,7 +208,7 @@ export default function Home() {
             </motion.div>
             {/* Network Illustration */}
             <motion.div
-              className="relative h-[450px] lg:h-[650px] md:h-[560px] sm:h-[500px] xl:h-[720px] w-full overflow-hidden"
+              className="relative h-[330px] lg:h-[650px] md:h-[560px] sm:h-[500px] xl:h-[720px] w-full overflow-hidden"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
@@ -217,7 +217,7 @@ export default function Home() {
             >
               <div className="absolute top-0 left-[-400px] right-[-360px] bottom-0 w-auto">
                 <img src="./Ellipse 12.png" alt="" className="h-full z-[99]" />
-                <div className="absolute top-[15%] left-[25%] right-[22%] 2xl:top-[15%] 2xl:left-[29%] 2xl:right-[0%]">
+                <div className="absolute top-[15%] md:left-[25%] sm:left-[28%] left-[34%] md:right-[22%] sm:right-[25%] right-[31%] 2xl:top-[15%] 2xl:left-[29%] 2xl:right-[0%]">
                   <img src="./connect-network.png" alt="" className="  " />
                 </div>
                 <img
