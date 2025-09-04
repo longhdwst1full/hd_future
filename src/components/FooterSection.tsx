@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 // components/FooterSection.js
 export default function FooterSection() {
   return (
@@ -18,7 +19,8 @@ export default function FooterSection() {
                 GỬI YÊU CẦU TƯ VẤN GIẢI PHÁP
               </h3>
               <p className="sm:mt-4 mt-2 font-medium lg:text-[21px] md:text-[17px] sm:text-[15px] text-[10px] xl:pr-2.5 xl:mr-6 md:leading-[24px] tracking-[1%] sm:mb-5">
-                Chúng tôi luôn tư vấn dịch vụ miễn phí. Chúng tôi sẽ liên hệ báo giá theo thông tin mà bạn để lại.
+                Chúng tôi luôn tư vấn dịch vụ miễn phí. Chúng tôi sẽ liên hệ báo
+                giá theo thông tin mà bạn để lại.
               </p>
             </div>
             <div className="flex-1 2xl:w-2/3 lg:my-0 my-10 sm:mt-14 mt-8 xl:mt-0 xl:mb-0 lg:mb-18 sm:mb-24 mb-[82%]">
@@ -159,65 +161,49 @@ export default function FooterSection() {
         {/* Social Media Section */}
         <div className="max-w-5xl mx-auto grid grid-cols-2 mb-8 lg:mt-30 sm:mt-34 mt-20 border-[3px] border-[#5389EE] rounded-[62px] overflow-hidden">
           <div className="text-center sm:px-10 border-r-[3px] border-[#5389EE] sm:pb-9 pb-6 sm:pt-12 pt-9">
-            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] inline-flex capitalize lg:ml-[-16%] ml-[-20%]">
+            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] inline-flex capitalize lg:ml-[-16%] ml-[-22%]">
               Follow Our
             </p>
-            <p className="text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
-              Linkedin{" "}
-              <span className="inline-block ml-2 text-blue-500 border rounded-full w-7 h-7 p-1">
-                <img
-                  src="/Vector.png"
-                  alt="LinkedIn Icon"
-                  className="w-full h-full"
-                />
+            <p className="flex items-center justify-center text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
+              Linkedin
+              <span className="ml-2 inline-flex items-center justify-center lg:w-8 lg:h-8 w-6 h-6 rounded-full p-[2px] bg-[linear-gradient(234.22deg,#1F2AF9_-7.78%,#21FF97_106.19%)] shadow-sm">
+                <ArrowUpRight className="w-full h-full text-[#2C32A3] rounded-full bg-white" />
               </span>
             </p>
           </div>
 
           <div className="text-center sm:px-10 sm:pb-9 pb-6 sm:pt-12 pt-9">
-            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] lg:ml-[-18%] ml-[-21%] inline-flex capitalize">
+            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] lg:ml-[-18%] ml-[-23%] inline-flex capitalize">
               Hop Our
             </p>
-            <p className="text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
-              Twitter{" "}
-              <span className="inline-block ml-2 text-blue-500 border rounded-full w-7 h-7 p-1">
-                <img
-                  src="/Vector.png"
-                  alt="Twitter Icon"
-                  className="w-full h-full"
-                />
+            <p className="flex items-center justify-center text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
+              Twitter
+              <span className="ml-2 inline-flex items-center justify-center lg:w-8 lg:h-8 w-6 h-6 rounded-full p-[2px] bg-[linear-gradient(234.22deg,#1F2AF9_-7.78%,#21FF97_106.19%)] shadow-sm">
+                <ArrowUpRight className="w-full h-full text-[#2C32A3] rounded-full bg-white" />
               </span>
             </p>
           </div>
 
           <div className="text-center sm:px-10 sm:pt-20 pt-12 sm:pb-14 pb-12 border-[3px] border-b-0 border-l-0 border-[#5389EE] rounded-tl-[62]">
-            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] capitalize lg:ml-[-25%] ml-[-30%] inline-flex">
+            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] capitalize lg:ml-[-25%] md:ml-[-32%] ml-[-36%] inline-flex">
               Join Our
             </p>
-            <p className="text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
-              Telegram{" "}
-              <span className="inline-block ml-2 text-blue-500 border rounded-full w-7 h-7 p-1">
-                <img
-                  src="/Vector.png"
-                  alt="Telegram Icon"
-                  className="w-full h-full"
-                />
+            <p className="flex items-center justify-center text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
+              Telegram
+              <span className="ml-2 inline-flex items-center justify-center lg:w-8 lg:h-8 w-6 h-6 rounded-full p-[2px] bg-[linear-gradient(234.22deg,#1F2AF9_-7.78%,#21FF97_106.19%)] shadow-sm">
+                <ArrowUpRight className="w-full h-full text-[#2C32A3] rounded-full bg-white" />
               </span>
             </p>
           </div>
 
           <div className="text-center sm:pt-20 pt-12 sm:pb-14 pb-12 border-[3px] border-b-0 border-l-0 border-r-0  border-[#5389EE] rounded-tr-[62px]">
-            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] capitalize lg:ml-[-14%] ml-[-17%] inline-flex">
+            <p className="text-[#6392FA] font-normal text-[15px] sm:text-xl md:text-[24px] capitalize lg:ml-[-14%] ml-[-18%] inline-flex">
               Follow Us On
             </p>
-            <p className="text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
-              Instagram{" "}
-              <span className="inline-block ml-2 text-blue-500 border rounded-full w-7 h-7 p-1">
-                <img
-                  src="/Vector.png"
-                  alt="Instagram Icon"
-                  className="w-full h-full"
-                />
+            <p className="flex items-center justify-center text-[#093FB4] font-semibold text-[23px] sm:text-3xl md:text-[39px] capitalize">
+              Instagram
+              <span className="ml-2 inline-flex items-center justify-center lg:w-8 lg:h-8 w-6 h-6 rounded-full p-[2px] bg-[linear-gradient(234.22deg,#1F2AF9_-7.78%,#21FF97_106.19%)] shadow-sm">
+                <ArrowUpRight className="w-full h-full text-[#2C32A3] rounded-full bg-white" />
               </span>
             </p>
           </div>
