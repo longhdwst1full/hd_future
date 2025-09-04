@@ -4,37 +4,32 @@ import Header from "@/components/Header";
 import Testimonial from "@/components/Testimonial";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import WorkflowSection from "@/components/WorkflowSection";
+import { motion } from "framer-motion";
 import Head from "next/head";
-import { motion, AnimatePresence } from "framer-motion"; 
 import Image from "next/image";
-import { useEffect, useState } from "react"; 
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: (i = 1) => ({ 
+  visible: (i = 1) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: 0.15 * i, duration: 0.7, type: "spring" as const }, 
-  }), 
-}; 
- 
-const parallaxVariants = { 
-  initial: { y: 0 }, 
-  animate: (i: number) => ({ 
-    y: [0, -10, 0], 
-    transition: { repeat: Infinity, duration: 4 + i, ease: [0.42, 0, 0.58, 1] as const }, // cubic-bezier for easeInOut 
-  }), 
+    transition: { delay: 0.15 * i, duration: 0.7, type: "spring" as const },
+  }),
+};
+
+const parallaxVariants = {
+  initial: { y: 0 },
+  animate: (i: number) => ({
+    y: [0, -10, 0],
+    transition: {
+      repeat: Infinity,
+      duration: 4 + i,
+      ease: [0.42, 0, 0.58, 1] as const,
+    }, // cubic-bezier for easeInOut
+  }),
 };
 
 export default function Home() {
-  const [showScrollTop, setShowScrollTop] = useState(false); 
- 
-  useEffect(() => { 
-    const onScroll = () => setShowScrollTop(window.scrollY > 300); 
-    window.addEventListener("scroll", onScroll); 
-    return () => window.removeEventListener("scroll", onScroll); 
-  }, []); 
- 
   return (
     <>
       <Head>
@@ -61,7 +56,7 @@ export default function Home() {
       </Head>
 
       <div className="relative">
-        {/* Decorative Images with Parallax */} 
+        {/* Decorative Images with Parallax */}
         {[
           {
             src: "/Ellipse 13.png",
@@ -73,9 +68,10 @@ export default function Home() {
           },
           {
             src: "/Ellipse 14.png",
-            className: "absolute sm:top-[28%] top-[15%] lg:left-[12%] w-[20%] text-[#A7FFE6] backdrop-blur-ultra backdrop-filter",
+            className:
+              "absolute sm:top-[28%] top-[15%] lg:left-[12%] w-[20%] text-[#A7FFE6] backdrop-blur-ultra backdrop-filter",
           },
-           {
+          {
             src: "/Ellipse 14.png",
             className: "w-30 absolute sm:top-[20%] top-[35%] left-[1%]",
           },
@@ -99,19 +95,26 @@ export default function Home() {
           },
           {
             src: "/Ellipse 21.png",
-            className:
-              "absolute left-[10%] w-[1%] top-[30%]",
+            className: "absolute left-[10%] w-[1%] top-[30%]",
           },
           {
             src: "/Ellipse 21.png",
             className: "absolute top-[48%] right-[18%] w-[80px]",
           },
-         
-          { src: "/Group 63.png", className: "absolute sm:top-[27%] top-[34%] sm:left-[16%] left-[10%] w-[15%]" },
-          { src: "/Group 63.png", className: "absolute top-[40%] right-[4%] w-[10%]" },
+
           {
             src: "/Group 63.png",
-            className: "w-[100px] absolute sm:top-[23%] top-[12%] w-[12%] sm:right-[18%] right-[8%]",
+            className:
+              "absolute sm:top-[27%] top-[34%] sm:left-[16%] left-[10%] w-[15%]",
+          },
+          {
+            src: "/Group 63.png",
+            className: "absolute top-[40%] right-[4%] w-[10%]",
+          },
+          {
+            src: "/Group 63.png",
+            className:
+              "w-[100px] absolute sm:top-[23%] top-[12%] w-[12%] sm:right-[18%] right-[8%]",
           },
         ].map((img, i) => (
           <Image
@@ -307,18 +310,29 @@ export default function Home() {
         variants={fadeInUp}
         custom={2}
       >
-        <div className="w-[95%] m-auto relative bg-white lg:rounded-[125px] rounded-[70px] md:mx-8 mx-4 overflow-hidden">
+        <div className="w-[95%] m-auto relative bg-white lg:rounded-[125px] rounded-[70px] md:mx-8 sm:mx-4 overflow-hidden">
           <div className="absolute inset-0 md:left-[35%] sm:left-[33%] left-[40%] sm:top-[-10%] md:bottom-[-15%] sm:bottom-[-30%] top-[15%] md:w-auto w-[80%]">
-            <Image
-              src="/Mesa de trabajo 1 3.png"
-              alt="Illustration"
-              width={600}
-              height={400}
-              className="w-full sm:h-full"
-            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <Image
+                src="/Mesa de trabajo 1 3.png"
+                alt="Illustration"
+                width={600}
+                height={400}
+                className="w-full sm:h-full"
+              />
+            </motion.div>
           </div>
-          <div className="md:w-3/5 w-full lg:pl-16 md:pl-10 pl-5">
-            <div className="lg:w-[450px] md:w-[350px] w-[200px] lg:ml-[-60px] ml-[-40px]">
+          <div className="md:w-3/5 w-full lg:pl-16 md:pl-10 sm:pl-5 pl-4">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              className="lg:w-[450px] md:w-[350px] w-[200px] lg:ml-[-60px] ml-[-40px]"
+            >
               <Image
                 src="/HD_logo_final.png"
                 alt="HD FutureTech Logo"
@@ -326,13 +340,18 @@ export default function Home() {
                 height={120}
                 className="w-full object-cover"
               />
-            </div>
+            </motion.div>
             <div className="md:w-2/3 w-[50%] lg:mt-[-50px] md:mt-[-30px] mt-[-30px] lg:mb-10 md:mb-5 sm:mb-10">
-              <p className="text-[#151D50] font-medium text-xs ms:text-[20px] xl:text-[28px] lg:leading-[37px] md:leading-[30px] md:mb-3 sm:mb-10">
+              <motion.p
+                className="text-[#151D50] font-medium text-xs ms:text-[20px] xl:text-[28px] lg:leading-[37px] md:leading-[30px] md:mb-3 sm:mb-10"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+              >
                 Our experienced project management team ensures that your
                 projects are delivered on time, within budget, and according to
                 your specifications.
-              </p>
+              </motion.p>
               <motion.button
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -350,12 +369,22 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center sm:mt-16 mt-12 lg:mb-40 md:mb-30 sm:mb-20 mb-10 font-semibold xl:text-[97px] md:text-[71px] sm:text-[50px] text-[20px] lg:leading-[104%] md:leading-[97%]">
-          <h2 className=" text-[#243761]">
+          <motion.h2
+            className="text-[#243761]"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+          >
             Take a look at
-          </h2>
-          <h2 className=" text-[#093FB4]">
+          </motion.h2>
+          <motion.h2
+            className="text-[#093FB4]"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
             Our Workflow About Us
-          </h2>
+          </motion.h2>
         </div>
         <WorkflowSection />
         <div className="w-full sm:rounded-b-[246px] rounded-b-[125px] pb-3">
@@ -372,20 +401,32 @@ export default function Home() {
         variants={fadeInUp}
         custom={3}
       >
-        <Image
-          src="/Ellipse 28.png"
-          alt=""
-          width={200}
-          height={200}
-          className="absolute right-0 bottom-0 w-100"
-        />
-        <Image
-          src="/Ellipse 29.png"
-          alt=""
-          width={320}
-          height={200}
-          className="absolute lg:left-4 left-0 lg:top-[-12%] top-0 lg:w-200 md:w-100 w-80"
-        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <Image
+            src="/Ellipse 28.png"
+            alt=""
+            width={200}
+            height={200}
+            className="absolute right-0 bottom-0 w-100"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
+          <Image
+            src="/Ellipse 29.png"
+            alt=""
+            width={320}
+            height={200}
+            className="absolute lg:left-4 left-0 lg:top-[-12%] top-0 lg:w-200 md:w-100 w-80"
+          />
+        </motion.div>
         <WhyChooseSection />
       </motion.div>
 

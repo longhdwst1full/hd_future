@@ -102,7 +102,7 @@ export default function FooterSection() {
         </div>
       </div>
 
-      <div className="border-[3px] border-[#093FB4] rounded-t-[152px] lg:mt-60 sm:mt-50 mt-32 lg:p-20 sm:p-12 p-8 relative outline-none">
+      <div className="border-[3px] border-[#093FB4] rounded-t-[152px] lg:mt-60 sm:mt-50 mt-32 lg:p-20 sm:p-12 p-6.5 relative outline-none">
         <div className="absolute top-[-12%] left-1/2 -translate-x-1/2 bg-white w-[318px] h-[318px] overflow-hidden rounded-full">
           <img
             src="/HD_logo_final.png"

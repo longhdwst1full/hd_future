@@ -72,7 +72,7 @@ export default function Testimonial() {
           {testimonialData.map((data, index) => (
             <div
               key={index}
-              className="bg-white border border-blue-900 lg:p-9 md:p-4 p-2 shadow-[0_8px_3.4px_-3px_rgba(103,187,255,0.51)] lg:rounded-[77px] sm:rounded-[70px] rounded-[35px] break-inside-avoid sm:mb-6 mb-3 transition-transform duration-500 ease-in-out hover:scale-105 animate-fadein-up"
+              className="bg-white border border-blue-900 lg:p-9 md:p-4 sm:p-3 p-2 shadow-[0_8px_3.4px_-3px_rgba(103,187,255,0.51)] lg:rounded-[77px] sm:rounded-[70px] rounded-[35px] break-inside-avoid sm:mb-6 mb-3 transition-transform duration-500 ease-in-out hover:scale-105 animate-fadein-up"
               style={{ animationDelay: `${index * 120}ms` }}
             >
               <div className="flex items-center lg:gap-4 gap-2 mb-4 mt-6">
@@ -152,10 +152,11 @@ export default function Testimonial() {
               <br />
               DOANH NGHIỆP CỦA BẠN ?
             </h3>
-            <p className="text-[#F6F8FF] font-medium lg:text-[22px] md:text-[16px] md:leading-[21px] leading-[11px] lg:mt-[18px] sm:text-[14px] text-[9px] mt-3 sm:mt-4 md:mb-9 sm:mb-10 mb-8 md:w-full sm:w-[90%] w-[80%] mx-auto animate-fadein">
+            <p className="text-[#F6F8FF] font-medium lg:text-[22px] md:text-[16px] md:leading-[21px] sm:leading-[17px] leading-[11px] lg:mt-[18px] sm:text-[14px] text-[9px] mt-3 sm:mt-4 md:mb-9 sm:mb-10 mb-8 md:w-full sm:w-[90%] w-[80%] mx-auto animate-fadein">
               Hợp tác cùng&nbsp;<span className="font-bold">HD CodeLab</span>
               &nbsp;để tăng tốc hành trình chuyển đổi số. Cùng kiến tạo giá trị
-              vượt <br className="hidden sm:inline-block" /> trội cho doanh nghiệp bạn.
+              vượt <br className="hidden sm:inline-block" /> trội cho doanh
+              nghiệp bạn.
             </p>
             <div className="lg:mb-10  mb-3">
               <button className="bg-white text-[#093FB4] hover:bg-gray-50 lg:text-[29px] md:text-[21px]  text-[12px] sm:text-lg font-semibold transition-all duration-300 hover:scale-105 px-6 py-3 rounded-full shadow-[inset_0px_3px_0px_0px_#FFFFFF,inset_0px_6px_7.2px_0px_rgba(87,255,54,0.25),0px_0px_0px_3px_rgba(255,223,96,0.25)] cursor-pointer animate-fadein">
