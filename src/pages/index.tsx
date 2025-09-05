@@ -134,7 +134,13 @@ export default function Home() {
           animate="visible"
           variants={fadeInUp}
         >
-          <div className="bg-[linear-gradient(179.87deg,#2FA8CC_-19.91%,#032D89_73.02%)] rounded-b-[200px] overflow-hidden">
+          <div
+            className="rounded-b-[200px] overflow-hidden"
+            style={{
+              background:
+                "linear-gradient(180.68deg, #3CE2FF -1.63%, #0C0B40 68.75%)",
+            }}
+          >
             <Header />
 
             {/* Banner */}
