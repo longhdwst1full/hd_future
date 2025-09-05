@@ -306,6 +306,7 @@ export default function Home() {
           ))}
         </div>
       </motion.section>
+       
 
       {/* About/Workflow Section */}
       <motion.section
