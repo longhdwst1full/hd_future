@@ -99,7 +99,7 @@ export default function Home() {
           },
           {
             src: "/Ellipse 21.png",
-            className: "absolute top-[48%] right-[18%] w-[80px]",
+            className: "absolute top-[48%] sm:right-[18%] right-[5%] sm:w-[80px] w-[10px]",
           },
 
           {
@@ -160,7 +160,7 @@ export default function Home() {
                 HD FUTURE. TECH
               </motion.h1>
               <motion.p
-                className="md:text-2xl sm:text-xl text-sm text-white/80 font-normal sm:mb-[-10px] mb-[-5%] z-[9999] "
+                className="md:text-2xl sm:text-xl text-sm text-white font-normal sm:mb-[-10px] mb-[-5%] z-[9999] "
                 variants={fadeInUp}
                 custom={3}
               >
