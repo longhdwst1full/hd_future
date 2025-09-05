@@ -17,17 +17,17 @@ const fadeInUp = {
   }),
 };
 
-const parallaxVariants = {
-  initial: { y: 0 },
-  animate: (i: number) => ({
-    y: [0, -10, 0],
-    transition: {
-      repeat: Infinity,
-      duration: 4 + i,
-      ease: [0.42, 0, 0.58, 1] as const,
-    }, // cubic-bezier for easeInOut
-  }),
-};
+// const parallaxVariants = {
+//   initial: { y: 0 },
+//   animate: (i: number) => ({
+//     y: [0, -10, 0],
+//     transition: {
+//       repeat: Infinity,
+//       duration: 4 + i,
+//       ease: [0.42, 0, 0.58, 1] as const,
+//     }, // cubic-bezier for easeInOut
+//   }),
+// };
 
 export default function Home() {
   return (
@@ -306,7 +306,6 @@ export default function Home() {
           ))}
         </div>
       </motion.section>
-       
 
       {/* About/Workflow Section */}
       <motion.section
